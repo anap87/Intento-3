@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick Off Scholars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kick Off Scholars</h1>
+        <p>El camino a tu éxito</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#user">Usuario</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Kick Off Scholars</h2>
+            <p>Somos expertos en asesoría profesional y deportiva. Te ayudamos a empezar tus estudios universitarios en USA.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Información de Contacto</h2>
+            <p>Email: kickoffscholars@gmail.com</p>
+            <p>Teléfono Ecuador: +593 996 312 285</p>
+            <p>Teléfono USA: +1 786 922 3853</p>
+            <p>Instagram: @kickoffscholars.usa</p>
+        </section>
+
+        <section id="user">
+            <h2>Sección de Usuario</h2>
+            <p>Crea tu cuenta para ver el estado de tu proceso.</p>
+        </section>
+    </main>
+</body>
+</html>
