@@ -78,6 +78,14 @@ h1, h2, h3 {
     width: 90%; /* Ajusta el ancho según sea necesario */
 }
 
+.menu-centrado h1 {
+    font-family: 'Righteous', sans-serif; /* Para "Kick" */
+}
+
+.menu-centrado h2 {
+    font-family: 'Grey Qo', cursive; /* Para "Scholars" */
+}
+
 .titulo-empresa {
     display: flex;
     justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
