@@ -57,7 +57,6 @@ h1, h2, h3 {
 /* Ajuste del logo */
 .logo {
     width: 3cm; /* Tamaño máximo del logo */
-    max-height: 3cm;
     object-fit: contain;
     margin: 0 auto;
 }
