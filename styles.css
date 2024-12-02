@@ -75,7 +75,7 @@ h1, h2, h3 {
 .menu-centrado {
     display: flex;
     justify-content: space-between; /* Espacio entre los elementos */
-    width: 60%; /* Ajusta el ancho según sea necesario */
+    width: 90%; /* Ajusta el ancho según sea necesario */
 }
 
 .titulo-empresa {
