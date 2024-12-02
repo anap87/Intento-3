@@ -77,19 +77,18 @@ h1, h2, h3 {
 }
 
 .titulo {
-    text-align: center;
     font-family: 'League Spartan', sans-serif;
-    color: #ad2521;
-    font-size: 3em;
+    font-size: 5em; /* Aumenta el tamaño del título */
     margin-top: 20px;
+    color: #ad2521;
 }
 
 .slogan {
-    text-align: center;
     font-family: 'Aileron', sans-serif;
+    font-size: 1.2em; /* Ajusta el tamaño para que no se vea tan grande */
     color: black;
-    font-size: 1.5em;
     animation: fadeIn 3s ease-in-out infinite;
+    margin-top: 10px; /* Reduce el espacio entre el título y el slogan */
 }
 
 @keyframes fadeIn {
