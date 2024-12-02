@@ -13,7 +13,6 @@ h1, h2, h3 {
 }
 
 /* Menú de navegación */
-/* Menú de navegación */
 .menu {
     background: white; /* Fondo blanco */
     color: #ad2521; /* Letras rojas */
@@ -37,15 +36,32 @@ h1, h2, h3 {
 }
 
 .menu ul li a {
-    color: #ad2521; /* Letras rojas */
+    color: #ad2521; /* Letras rojas (por defecto) */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Añadido para el zoom */
+}
+
+/* Color rojo siempre visible, sin hover */
+.menu ul li a {
+    color: #ad2521;
 }
 
 .menu ul li a:hover {
     color: #f9c2c2; /* Color al pasar el ratón */
+    transform: scale(1.1); /* Efecto zoom cuando el mouse pasa por encima */
 }
+
+/* Estilo para el enlace al hacer clic */
+.menu ul li a:active {
+    transform: scale(1.05); /* Efecto de "zoom" al hacer clic */
+}
+
+/* Efecto de navegación suave (scrolling) al hacer clic en el enlace */
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 /* Inicio */
