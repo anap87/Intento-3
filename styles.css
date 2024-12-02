@@ -47,14 +47,27 @@ h1, h2, h3 {
 
 /* Inicio */
 .inicio {
+    background-image: url('Fondo.jpeg');
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
     text-align: center;
-    background: url('fondo.jpeg') no-repeat center center/cover;
     color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    overflow: hidden; /* Para evitar que el contenido sobresalga del fondo */
+}
+
+/* Agregar un filtro de opacidad para hacer el fondo más transparente */
+.inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.5; /* Cambia el valor para ajustar la opacidad */
+    z-index: -1; /* Para que no cubra el contenido */
 }
 
 .logo {
