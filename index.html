@@ -1,43 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kick Off Scholars</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Aileron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kick Off Scholars</h1>
-        <p>El camino a tu éxito</p>
-    </header>
-
-    <nav>
+    <!-- Menú de navegación -->
+    <nav class="menu">
         <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#user">Usuario</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+            <li><a href="#servicios">Nuestros servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section id="home">
-            <h2>Bienvenidos a Kick Off Scholars</h2>
-            <p>Somos expertos en asesoría profesional y deportiva. Te ayudamos a empezar tus estudios universitarios en USA.</p>
-        </section>
+    <!-- Sección de Inicio -->
+    <header class="inicio">
+        <img src="logo.png" alt="Logo de Kick Off Scholars" class="logo">
+        <h1>Kick Off Scholars</h1>
+        <p class="slogan">El camino a tu éxito</p>
+        <button class="boton" onclick="scrollToSection('quienes-somos')">Inicio</button>
+    </header>
 
-        <section id="contact">
-            <h2>Información de Contacto</h2>
-            <p>Email: kickoffscholars@gmail.com</p>
-            <p>Teléfono Ecuador: +593 996 312 285</p>
-            <p>Teléfono USA: +1 786 922 3853</p>
-            <p>Instagram: @kickoffscholars.usa</p>
-        </section>
+    <!-- ¿Quiénes somos? -->
+    <section id="quienes-somos" class="seccion-blanca">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="boton-imagen">
+            <img src="imagen.jpg" alt="Imagen de servicios" class="imagen">
+            <button class="boton" onclick="scrollToSection('servicios')">Nuestros servicios</button>
+        </div>
+    </section>
 
-        <section id="user">
-            <h2>Sección de Usuario</h2>
-            <p>Crea tu cuenta para ver el estado de tu proceso.</p>
-        </section>
-    </main>
+    <!-- Nuestros servicios -->
+    <section id="servicios" class="seccion-blanca">
+        <h2>Nuestros planes disponibles</h2>
+        <div class="plan">
+            <h3>Plan Básico</h3>
+            <p>Descripción del Plan Básico.</p>
+            <img src="plan1.jpg" alt="Imagen del Plan Básico">
+            <button class="boton" onclick="scrollToSection('plan-basico')">Ver más</button>
+        </div>
+        <div class="plan">
+            <h3>Plan Intermedio</h3>
+            <p>Descripción del Plan Intermedio.</p>
+            <img src="plan2.jpg" alt="Imagen del Plan Intermedio">
+            <button class="boton" onclick="scrollToSection('plan-intermedio')">Ver más</button>
+        </div>
+        <div class="plan">
+            <h3>Plan Avanzado</h3>
+            <p>Descripción del Plan Avanzado.</p>
+            <img src="plan3.jpg" alt="Imagen del Plan Avanzado">
+            <button class="boton" onclick="scrollToSection('plan-avanzado')">Ver más</button>
+        </div>
+    </section>
+
+    <!-- Detalles de planes -->
+    <section id="plan-basico" class="seccion-blanca">
+        <h2>¿Qué incluye?</h2>
+        <p>Detalles del Plan Básico.</p>
+    </section>
+    <section id="plan-intermedio" class="seccion-blanca">
+        <h2>¿Qué incluye?</h2>
+        <p>Detalles del Plan Intermedio.</p>
+    </section>
+    <section id="plan-avanzado" class="seccion-blanca">
+        <h2>¿Qué incluye?</h2>
+        <p>Detalles del Plan Avanzado.</p>
+    </section>
 </body>
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 </html>
