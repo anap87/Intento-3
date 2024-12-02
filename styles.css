@@ -48,7 +48,7 @@ h1, h2, h3 {
 /* Inicio */
 /* Estilo para la sección de inicio */
 .inicio {
-    background-image: url('fondo.jpeg'); /* Asegúrate de que la ruta sea correcta */
+    background-image: url('fondodef.png'); /* Asegúrate de que la ruta sea correcta */
     background-size: cover; /* Hace que la imagen de fondo cubra toda la sección */
     background-position: center center; /* Centra la imagen */
     padding: 50px 0;
