@@ -14,8 +14,8 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .menu {
-    background: #ad2521;
-    color: white;
+    background: white;
+    color: #ad2521;
     position: fixed;
     top: 0;
     width: 100%;
