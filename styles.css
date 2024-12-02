@@ -13,26 +13,18 @@ h1, h2, h3 {
 }
 
 /* Menú de navegación */
+/* Menú flotante */
 .menu-flotante {
-    display: none; /* Ocultamos el menú por defecto */
+    display: none; /* El menú está oculto inicialmente */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    background: white;
+    height: 100%;
+    background-color: white;
     z-index: 100;
-    animation: slideIn 0.5s ease-out forwards;
     padding-top: 50px;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
+    transition: all 0.3s ease;
 }
 
 .menu-items {
@@ -50,6 +42,7 @@ h1, h2, h3 {
     font-size: 2em;
 }
 
+
 .menu ul li a {
     color: #ad2521;
     text-decoration: none;
@@ -66,19 +59,6 @@ h1, h2, h3 {
     transform: scale(1.05); /* Efecto de "zoom" al hacer clic */
 }
 
-/* Estilo para el botón de menú */
-#menu-btn {
-    padding: 10px 20px;
-    background-color: #ad2521;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: 'League Spartan', sans-serif;
-}
-
-#menu-btn:hover {
-    background-color: #8b1e1b;
-}
 
 /* Estilo para la sección de inicio */
 .inicio {
@@ -115,17 +95,30 @@ h1, h2, h3 {
 }
 
 .titulo2 {
-    font-family: 'Sloop Script Pro', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 3em;
     color: white;
+    margin-top: 2mm; /* Ajustamos el espacio */
 }
 
 .slogan {
-    font-family: 'Aileron', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1.5em;
     color: black;
     animation: fadeIn 3s ease-in-out infinite;
 }
+
+.logo {
+    width: 120px; /* Ajusta el tamaño del logo */
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo:hover, .slogan:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    transition: transform 0.3s ease;
+}
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -193,3 +186,15 @@ h1, h2, h3 {
     transform: scale(1.1);
 }
 
+/* Establecemos que cada sección ocupe toda la pantalla */
+.seccion {
+    display: none; /* Se ocultan todas las secciones inicialmente */
+    min-height: 100vh; /* Asegura que cada sección ocupe toda la altura de la ventana */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* La primera sección (inicio) se mostrará al principio */
+#inicio-seccion {
+    display: block;
+}
