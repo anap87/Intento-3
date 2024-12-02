@@ -28,32 +28,6 @@ h1, h2, h3 {
     padding: 20px;
 }
 
-
-.titulo-kickoff {
-    font-family: 'PGF Now Bold', sans-serif; /* Usa la fuente en rojo */
-    font-size: 3em;
-    color: #ad2521;
-    margin: 0; /* Sin márgenes adicionales */
-    padding: 0;
-}
-
-.titulo-scholars {
-    font-family: 'Wally Normal', sans-serif; /* Usa la fuente en negro */
-    font-size: 2.5em;
-    color: white;
-    margin: 0; /* Sin márgenes adicionales */
-    padding: 0;
-}
-
-.titulos-empresa {
-    display: flex;
-    flex-direction: column; /* Alinea los títulos uno debajo del otro */
-    align-items: center; /* Centra los títulos horizontalmente */
-    margin: 0; /* Separación del logo */
-    padding: 0;
-    line-height: 0.5px; /* Compacta el espacio vertical entre títulos */
-}
-
 /* Ajuste del logo */
 .logo {
     width: 3cm; /* Tamaño máximo del logo */
