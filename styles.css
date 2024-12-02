@@ -198,3 +198,13 @@ h1, h2, h3 {
 #inicio-seccion {
     display: block;
 }
+
+.seccion {
+    display: none; /* Oculta todas las secciones por defecto */
+}
+
+/* Ejemplo de las secciones visibles */
+#inicio-seccion {
+    display: block; /* Esta es la sección que se muestra al inicio */
+}
+
