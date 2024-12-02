@@ -35,7 +35,6 @@ h1, h2, h3 {
     color: #ad2521;
     margin: 0; /* Sin márgenes adicionales */
     padding: 0;
-    display: inline; /* Para que Kick Off y Scholars estén en una misma línea si lo necesitas */
 }
 
 .titulo-scholars {
@@ -44,7 +43,6 @@ h1, h2, h3 {
     color: white;
     margin: 0; /* Sin márgenes adicionales */
     padding: 0;
-    display: inline;
 }
 
 .titulo-empresa {
