@@ -34,7 +34,7 @@ h1, h2, h3 {
     font-size: 3em;
     color: #ad2521;
     margin-top: 1mm;
-    margin-bottom: 0:
+    margin-bottom: 0;
     display: inline; /* Para que Kick Off y Scholars estén en una misma línea si lo necesitas */
 }
 
@@ -58,7 +58,7 @@ h1, h2, h3 {
     width: 3cm; /* Tamaño máximo del logo */
     max-height: 3cm;
     object-fit: contain;
-    margin-bottom: 10px; /* Espacio debajo del logo */
+    margin-bottom: 2px; /* Espacio debajo del logo */
 }
 
 /* Botón Menú */
