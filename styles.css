@@ -49,9 +49,9 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column; /* Alinea los títulos uno debajo del otro */
     align-items: center; /* Centra los títulos horizontalmente */
-    margin: 4mm auto 0; /* Separación del logo */
+    margin: 0; /* Separación del logo */
     padding: 0;
-    line-height: 1; /* Compacta el espacio vertical entre títulos */
+    line-height: 0.5px; /* Compacta el espacio vertical entre títulos */
 }
 
 /* Ajuste del logo */
