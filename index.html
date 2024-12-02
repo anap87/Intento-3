@@ -12,92 +12,80 @@
 <!-- Sección de Inicio -->
 <header class="inicio">
     <img src="logodef.png" alt="Logo de Kick Off Scholars" class="logo">
-    <h1 class="titulo">Kick Off</h1>
-    <h2 class="titulo2">Scholars</h2> <!-- Este será el segundo título -->
-    <p class="slogan">El camino a tu éxito</p>
-
-    <!-- Botón "Menu" -->
+    <h1 class="titulo-kickoff">Kick Off</h1>
+    <h2 class="titulo-scholars">Scholars</h2>
     <button id="menu-btn" class="boton">Menu</button>
 </header>
 
-<!-- Menú flotante -->
-<div class="seccion" id="inicio-seccion">
-    <h1 class="encabezado">Nombre de la Empresa</h1>
-    <!-- Contenido de la sección -->
+<!-- Menú Desplegable -->
+<div id="menu-flotante" class="menu-flotante">
+    <div class="menu-contenido">
+        <div class="menu-logo">
+            <h1 class="titulo-kickoff">Kick Off</h1>
+            <h2 class="titulo-scholars-negro">Scholars</h2>
+        </div>
+        <ul class="menu-items">
+            <li><button onclick="mostrarSecciones('quienes-somos')">¿Quiénes somos?</button></li>
+            <li><button onclick="mostrarSecciones('nuestros-servicios')">Nuestros Servicios</button></li>
+            <li><button onclick="mostrarSecciones('contacto')">Contacto</button></li>
+        </ul>
+    </div>
 </div>
-<div class="seccion" id="quienes-somos">
-    <h1 class="encabezado">Nombre de la Empresa</h1>
-    <!-- Contenido de la sección -->
-</div>
-<div class="seccion" id="nuestros-servicios">
-    <h1 class="encabezado">Nombre de la Empresa</h1>
-    <!-- Contenido de la sección -->
-</div>
 
+<!-- ¿Quiénes somos? -->
+<section id="quienes-somos" class="seccion">
+    <img src="quienes-somos.jpg" alt="Imagen principal" class="imagen-principal">
+    <h1>¿Quiénes somos?</h1>
+    <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
+</section>
 
+<!-- Nuestros Servicios -->
+<section id="nuestros-servicios" class="seccion">
+    <h1>Nuestros planes disponibles</h1>
+    <div class="plan">
+        <h3>Plan Básico</h3>
+        <p>Descripción del Plan Básico.</p>
+        <button onclick="mostrarSecciones('plan-basico')">¿Qué incluye?</button>
+    </div>
+    <div class="plan">
+        <h3>Plan Scholars</h3>
+        <p>Descripción del Plan Scholars.</p>
+        <button onclick="mostrarSecciones('plan-scholars')">¿Qué incluye?</button>
+    </div>
+    <div class="plan">
+        <h3>Plan Golden Scholars</h3>
+        <p>Descripción del Plan Golden Scholars.</p>
+        <button onclick="mostrarSecciones('plan-golden')">¿Qué incluye?</button>
+    </div>
+</section>
 
+<!-- Detalles de los Planes -->
+<section id="plan-basico" class="seccion">
+    <h2>¿Qué incluye el Plan Básico?</h2>
+    <p>Detalles del Plan Básico.</p>
+</section>
+<section id="plan-scholars" class="seccion">
+    <h2>¿Qué incluye el Plan Scholars?</h2>
+    <p>Detalles del Plan Scholars.</p>
+</section>
+<section id="plan-golden" class="seccion">
+    <h2>¿Qué incluye el Plan Golden Scholars?</h2>
+    <p>Detalles del Plan Golden Scholars.</p>
+</section>
 
-    <!-- ¿Quiénes somos? -->
-    <section id="quienes-somos" class="seccion-blanca">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-        <div class="boton-imagen">
-            <img src="imagen.jpg" alt="Imagen de servicios" class="imagen">
-            <button class="boton" onclick="scrollToSection('servicios')">Nuestros servicios</button>
-        </div>
-    </section>
+<!-- Contacto -->
+<section id="contacto" class="seccion">
+    <img src="contacto.jpg" alt="Imagen de contacto" class="imagen-principal">
+    <div class="contacto-info">
+        <p>Teléfono: +1 234 567 890</p>
+        <p>Email: contacto@kickoffscholars.com</p>
+        <p>Instagram: @kickoffscholars</p>
+        <p>Facebook: Kick Off Scholars</p>
+        <p>TikTok: @kickoffscholars</p>
+    </div>
+</section>
 
-    <!-- Nuestros servicios -->
-    <section id="servicios" class="seccion-blanca">
-        <h2>Nuestros planes disponibles</h2>
-        <div class="plan">
-            <h3>Plan Básico</h3>
-            <p>Descripción del Plan Básico.</p>
-            <img src="plan1.jpg" alt="Imagen del Plan Básico">
-            <button class="boton" onclick="scrollToSection('plan-basico')">Ver más</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Intermedio</h3>
-            <p>Descripción del Plan Intermedio.</p>
-            <img src="plan2.jpg" alt="Imagen del Plan Intermedio">
-            <button class="boton" onclick="scrollToSection('plan-intermedio')">Ver más</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Avanzado</h3>
-            <p>Descripción del Plan Avanzado.</p>
-            <img src="plan3.jpg" alt="Imagen del Plan Avanzado">
-            <button class="boton" onclick="scrollToSection('plan-avanzado')">Ver más</button>
-        </div>
-    </section>
-
-    <!-- Detalles de planes -->
-    <section id="plan-basico" class="seccion-blanca">
-        <h2>¿Qué incluye?</h2>
-        <p>Detalles del Plan Básico.</p>
-    </section>
-    <section id="plan-intermedio" class="seccion-blanca">
-        <h2>¿Qué incluye?</h2>
-        <p>Detalles del Plan Intermedio.</p>
-    </section>
-    <section id="plan-avanzado" class="seccion-blanca">
-        <h2>¿Qué incluye?</h2>
-        <p>Detalles del Plan Avanzado.</p>
-    </section>
-
-    <!-- Enlace al archivo JavaScript -->
-    <script src="script.js"></script>
-    </body>
-    </html>
-
-    
+<script src="script.js"></script>
 </body>
-<script>
-    function scrollToSection(id) {
-        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-</script>
 </html>
+
