@@ -15,7 +15,7 @@ h1, h2, h3 {
 /* Inicio */
 .inicio {
     text-align: center; /* Centra todo el contenido dentro de la sección */
-    background-image: url('fondodef.png');
+    background-image: url('fondo.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
