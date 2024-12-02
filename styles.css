@@ -13,38 +13,48 @@ h1, h2, h3 {
 }
 
 /* Menú de navegación */
-.menu {
-    background: white; /* Fondo blanco */
-    color: #ad2521; /* Letras rojas */
+.menu-flotante {
+    display: none; /* Ocultamos el menú por defecto */
     position: fixed;
-    top: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    padding: 10px;
+    height: auto;
+    background: white;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadido para un poco de sombra */
+    animation: slideIn 0.5s ease-out forwards;
+    padding-top: 50px;
 }
 
-.menu ul {
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.menu-items {
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
+    text-align: center;
 }
 
-.menu ul li {
-    margin: 0 15px;
+.menu-items li {
+    margin: 20px 0;
 }
 
-.menu ul li a {
-    color: #ad2521; /* Letras rojas (por defecto) */
+.menu-items a {
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s; /* Añadido para el zoom */
+    color: #ad2521;
+    font-size: 2em;
 }
 
-/* Color rojo siempre visible, sin hover */
 .menu ul li a {
     color: #ad2521;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .menu ul li a:hover {
@@ -52,31 +62,33 @@ h1, h2, h3 {
     transform: scale(1.1); /* Efecto zoom cuando el mouse pasa por encima */
 }
 
-/* Estilo para el enlace al hacer clic */
 .menu ul li a:active {
     transform: scale(1.05); /* Efecto de "zoom" al hacer clic */
 }
 
-/* Efecto de navegación suave (scrolling) al hacer clic en el enlace */
-html {
-    scroll-behavior: smooth;
+/* Estilo para el botón de menú */
+#menu-btn {
+    padding: 10px 20px;
+    background-color: #ad2521;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
 }
 
+#menu-btn:hover {
+    background-color: #8b1e1b;
+}
 
-
-/* Inicio */
 /* Estilo para la sección de inicio */
 .inicio {
-    background-image: url('fondodef.png'); /* Asegúrate de que la ruta sea correcta */
-    background-size: cover; /* Hace que la imagen de fondo cubra toda la sección */
-    background-position: center center; /* Centra la imagen */
-    padding: 50px 0;
+    background-image: url('fondodef.png');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    min-height: 100vh; 
-    color: white;
+    min-height: 100vh;
     position: relative;
-    overflow: hidden;
-    
+    color: white;
 }
 
 .inicio::before {
@@ -95,32 +107,31 @@ html {
     z-index: 2; /* Asegura que el texto esté encima de la capa semitransparente */
 }
 
-
-.logo {
-    width: 150px; /* Ajusta el tamaño del logo */
-    display: block;
-    margin: 0 auto;
-}
-
+/* Estilos para el título y slogan en la carátula */
 .titulo {
     font-family: 'League Spartan', sans-serif;
-    font-size: 5em; /* Aumenta el tamaño del título */
-    margin-top: 20px;
+    font-size: 5em;
     color: #ad2521;
+}
+
+.titulo2 {
+    font-family: 'Sloop Script Pro', cursive;
+    font-size: 3em;
+    color: white;
 }
 
 .slogan {
     font-family: 'Aileron', sans-serif;
-    font-size: 1.2em; /* Ajusta el tamaño para que no se vea tan grande */
+    font-size: 1.5em;
     color: black;
     animation: fadeIn 3s ease-in-out infinite;
-    margin-top: 10px; /* Reduce el espacio entre el título y el slogan */
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     50% { opacity: 1; }
     100% { opacity: 0; }
+}
 
 /* Botones */
 .boton {
@@ -154,7 +165,7 @@ html {
     transform: scale(1.1);
 }
 
-.boton-inicio {
+.boton-inicio, .boton-servicios {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ad2521;
@@ -165,19 +176,11 @@ html {
     font-family: 'League Spartan', sans-serif;
 }
 
-/* Estilo para el botón "Nuestros Servicios" */
-.boton-servicios {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ad2521;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-family: 'League Spartan', sans-serif;
+.boton-inicio:hover, .boton-servicios:hover {
+    background-color: #8b1e1b;
 }
 
-/* Estilo para las imágenes */
+/* Estilo para las imágenes de servicios */
 .imagen-servicios {
     display: block;
     margin: 20px auto;
@@ -186,7 +189,7 @@ html {
     transition: transform 0.3s ease;
 }
 
-/* Efecto zoom para la imagen */
 .imagen-servicios:hover {
     transform: scale(1.1);
 }
+
