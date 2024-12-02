@@ -139,4 +139,12 @@ h1, h2, h3 {
 }
 
 
-
+/* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
+@media (max-width: 768px) {
+    .titulo-kickoff {
+        font-size: 2em; /* Tamaño más pequeño en dispositivos móviles */
+    }
+    .titulo-scholars {
+        font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
+    }
+}
