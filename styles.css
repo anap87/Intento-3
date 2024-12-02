@@ -1,4 +1,4 @@
-/* Fuentes */
+/* General */
 body {
     font-family: 'Aileron', sans-serif;
     margin: 0;
@@ -12,199 +12,99 @@ h1, h2, h3 {
     color: #ad2521;
 }
 
-/* Menú de navegación */
-/* Menú flotante */
+/* Inicio */
+.inicio {
+    text-align: center;
+    background-image: url('fondodef.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+.titulo-kickoff {
+    font-family: 'PGF Now Bold', sans-serif;
+    font-size: 3em;
+    color: #ad2521;
+    margin: 2px 0;
+}
+
+.titulo-scholars {
+    font-family: 'Wally Normal', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+}
+
+/* Botón Menú */
+.boton {
+    background-color: #ad2521;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Menú Flotante */
 .menu-flotante {
-    display: none; /* El menú está oculto inicialmente */
+    display: none;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
     z-index: 100;
-    padding-top: 50px;
-    transition: all 0.3s ease;
 }
 
-.menu-items {
-    list-style: none;
-    text-align: center;
+.menu-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
 }
 
 .menu-items li {
+    list-style: none;
     margin: 20px 0;
 }
 
-.menu-items a {
-    text-decoration: none;
-    color: #ad2521;
-    font-size: 2em;
-}
-
-
-.menu ul li a {
-    color: #ad2521;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.menu ul li a:hover {
-    color: #f9c2c2; /* Color al pasar el ratón */
-    transform: scale(1.1); /* Efecto zoom cuando el mouse pasa por encima */
-}
-
-.menu ul li a:active {
-    transform: scale(1.05); /* Efecto de "zoom" al hacer clic */
-}
-
-
-/* Estilo para la sección de inicio */
-.inicio {
-    background-image: url('fondodef.png');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    min-height: 100vh;
-    position: relative;
-    color: white;
-}
-
-.inicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad para mejorar la visibilidad del texto */
-    z-index: 1; /* Asegura que esta capa esté debajo del texto */
-}
-
-.inicio h1, .inicio p {
-    position: relative;
-    z-index: 2; /* Asegura que el texto esté encima de la capa semitransparente */
-}
-
-/* Estilos para el título y slogan en la carátula */
-.titulo {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 5em;
-    color: #ad2521;
-}
-
-.titulo2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3em;
-    color: white;
-    margin-top: 2mm; /* Ajustamos el espacio */
-}
-
-.slogan {
-    font-family: 'Lora', serif;
-    font-size: 1.5em;
-    color: black;
-    animation: fadeIn 3s ease-in-out infinite;
-}
-
-.logo {
-    width: 120px; /* Ajusta el tamaño del logo */
-    display: block;
-    margin: 0 auto;
-}
-
-.titulo:hover, .slogan:hover {
-    transform: scale(1.1); /* Efecto de zoom */
-    transition: transform 0.3s ease;
-}
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-/* Botones */
-.boton {
-    background: #ad2521;
-    color: white;
+.menu-items button {
+    background: none;
     border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.boton:hover {
-    background: #8b1e1b;
-}
-
-/* Sección blanca */
-.seccion-blanca {
-    background: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.plan img, .imagen {
-    width: 200px;
-    transition: transform 0.3s;
-}
-
-.plan img:hover, .imagen:hover {
-    transform: scale(1.1);
-}
-
-.boton-inicio, .boton-servicios {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ad2521;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
     font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    color: #ad2521;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.boton-inicio:hover, .boton-servicios:hover {
-    background-color: #8b1e1b;
+.menu-items button:hover {
+    color: #f9c2c2;
 }
 
-/* Estilo para las imágenes de servicios */
-.imagen-servicios {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 500px;
-    transition: transform 0.3s ease;
-}
-
-.imagen-servicios:hover {
-    transform: scale(1.1);
-}
-
-/* Establecemos que cada sección ocupe toda la pantalla */
+/* Secciones */
 .seccion {
-    display: none; /* Se ocultan todas las secciones inicialmente */
-    min-height: 100vh; /* Asegura que cada sección ocupe toda la altura de la ventana */
+    display: none;
+    min-height: 100vh;
     padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
+    background: white;
 }
 
-/* La primera sección (inicio) se mostrará al principio */
-#inicio-seccion {
-    display: block;
+.imagen-principal {
+    width: 100%;
+    max-height: 66vh;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-.seccion {
-    display: none; /* Oculta todas las secciones por defecto */
+.contacto-info p {
+    margin: 10px 0;
 }
 
-/* Ejemplo de las secciones visibles */
-#inicio-seccion {
-    display: block; /* Esta es la sección que se muestra al inicio */
-}
 
