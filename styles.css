@@ -58,14 +58,31 @@ h1, h2, h3 {
 }
 
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 150px; /* Ajusta el tamaño del logo */
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+    font-size: 3em;
+    margin-top: 20px;
 }
 
 .slogan {
-    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Aileron', sans-serif;
+    color: black;
+    font-size: 1.5em;
     animation: fadeIn 3s ease-in-out infinite;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 
 /* Botones */
 .boton {
@@ -96,5 +113,42 @@ h1, h2, h3 {
 }
 
 .plan img:hover, .imagen:hover {
+    transform: scale(1.1);
+}
+
+.boton-inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ad2521;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Estilo para el botón "Nuestros Servicios" */
+.boton-servicios {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ad2521;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Estilo para las imágenes */
+.imagen-servicios {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto zoom para la imagen */
+.imagen-servicios:hover {
     transform: scale(1.1);
 }
