@@ -1,43 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kick Off Scholars</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Kick Off Scholars</h1>
-        <p>El camino a tu éxito</p>
-    </header>
+/* Fuentes */
+body {
+    font-family: 'Aileron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: black;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#user">Usuario</a></li>
-        </ul>
-    </nav>
+h1, h2, h3 {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+}
 
-    <main>
-        <section id="home">
-            <h2>Bienvenidos a Kick Off Scholars</h2>
-            <p>Somos expertos en asesoría profesional y deportiva. Te ayudamos a empezar tus estudios universitarios en USA.</p>
-        </section>
+/* Menú de navegación */
+.menu {
+    background: #ad2521;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+}
 
-        <section id="contact">
-            <h2>Información de Contacto</h2>
-            <p>Email: kickoffscholars@gmail.com</p>
-            <p>Teléfono Ecuador: +593 996 312 285</p>
-            <p>Teléfono USA: +1 786 922 3853</p>
-            <p>Instagram: @kickoffscholars.usa</p>
-        </section>
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
 
-        <section id="user">
-            <h2>Sección de Usuario</h2>
-            <p>Crea tu cuenta para ver el estado de tu proceso.</p>
-        </section>
-    </main>
-</body>
-</html>
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #f9c2c2;
+}
+
+/* Inicio */
+.inicio {
+    text-align: center;
+    background: url('fondo.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+/* Botones */
+.boton {
+    background: #ad2521;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background: #8b1e1b;
+}
+
+/* Sección blanca */
+.seccion-blanca {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.plan img, .imagen {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.plan img:hover, .imagen:hover {
+    transform: scale(1.1);
+}
