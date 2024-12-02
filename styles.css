@@ -33,6 +33,8 @@ h1, h2, h3 {
     font-family: 'PGF Now Bold', sans-serif; /* Usa la fuente en rojo */
     font-size: 3em;
     color: #ad2521;
+    margin: 0; /* Sin márgenes adicionales */
+    padding: 0;
     display: inline; /* Para que Kick Off y Scholars estén en una misma línea si lo necesitas */
 }
 
@@ -40,6 +42,8 @@ h1, h2, h3 {
     font-family: 'Wally Normal', sans-serif; /* Usa la fuente en negro */
     font-size: 2.5em;
     color: white;
+    margin: 0; /* Sin márgenes adicionales */
+    padding: 0;
     display: inline;
 }
 
@@ -47,6 +51,8 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column; /* Alinea los títulos uno debajo del otro */
     align-items: center; /* Centra horizontalmente */
+    margin: 4mm auto 0 auto; 
+    padding: 0;
 
 }
 
@@ -55,7 +61,7 @@ h1, h2, h3 {
     width: 3cm; /* Tamaño máximo del logo */
     max-height: 3cm;
     object-fit: contain;
-   
+    margin: 0 auto;
 }
 
 /* Botón Menú */
