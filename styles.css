@@ -130,6 +130,10 @@ h1, h2, h3 {
     background: white;
 }
 
+.seccion.activa {
+    display: block;
+}
+
 .imagen-principal {
     width: 100%;
     max-height: 66vh;
