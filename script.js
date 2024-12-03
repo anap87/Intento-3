@@ -1,21 +1,20 @@
 function mostrarSecciones(seccionID) {
     const secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(seccion => {
-        seccion.style.display = 'none'; // Ocultamos todas las secciones
-    });
-    
+    // Primero ocultamos todas las secciones
+    secciones.forEach(seccion => seccion.classList.remove('activa'));
+
+    // Buscamos la sección que se debe mostrar
     const seccionSeleccionada = document.getElementById(seccionID);
     if (seccionSeleccionada) {
-        seccionSeleccionada.style.display = 'block'; // Mostramos la sección seleccionada
+        // Agregamos la clase activa para mostrarla
+        seccionSeleccionada.classList.add('activa');
     } else {
-        console.log("Sección no encontrada: " + seccionID); // Para depurar si la ID no existe
+        console.log("Sección no encontrada: " + seccionID); // Verifica si la sección no existe
     }
 }
 
-// Agregar el evento del menú
+// Evento del menú
 document.getElementById('menu-btn').addEventListener('click', function() {
     const menu = document.getElementById('menu-flotante');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
-
-
