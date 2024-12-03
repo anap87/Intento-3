@@ -18,6 +18,20 @@ function mostrarSecciones(seccionID) {
     }
 }
 
+function mostrarSecciones(seccionID) {
+    const secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(seccion => {
+        seccion.style.display = 'none'; // Ocultamos todas las secciones
+    });
+    
+    const seccionSeleccionada = document.getElementById(seccionID);
+    if (seccionSeleccionada) {
+        seccionSeleccionada.style.display = 'block'; // Mostramos la sección seleccionada
+    } else {
+        console.log("Sección no encontrada: " + seccionID); // Para depurar si la ID no existe
+    }
+}
+
 // Función para mostrar/ocultar el menú desplegable
 document.getElementById('menu-btn').addEventListener('click', function () {
     const menu = document.getElementById('menu-flotante');
