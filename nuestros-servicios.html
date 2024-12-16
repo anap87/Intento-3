@@ -3,32 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Servicios - Kick Off Scholars</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Aileron&display=swap" rel="stylesheet">
+    <title>Servicios - Mi Empresa</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Aileron:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="servicios.html">Nuestros Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
 
-<header class="inicio">
-    <img src="logodef.png" alt="Logo de Kick Off Scholars" class="logo">
-</header>
+    <main>
+        <section class="intro">
+            <h1 class="titulo">Nuestros Planes Disponibles</h1>
+            <p class="descripcion">Conoce nuestras opciones para adaptarnos a tus necesidades.</p>
+        </section>
 
-<section class="seccion">
-    <h1>Nuestros planes disponibles</h1>
-    <div class="plan">
-        <h3>Plan Básico</h3>
-        <p>Descripción del Plan Básico.</p>
-    </div>
-    <div class="plan">
-        <h3>Plan Scholars</h3>
-        <p>Descripción del Plan Scholars.</p>
-    </div>
-    <div class="plan">
-        <h3>Plan Golden Scholars</h3>
-        <p>Descripción del Plan Golden Scholars.</p>
-    </div>
-</section>
+        <section class="planes">
+            <!-- Plan Inicial -->
+            <div class="plan">
+                <div class="plan-texto">
+                    <h2 class="subtitulo">Plan Inicial</h2>
+                    <p class="descripcion">Ideal para quienes están comenzando. Incluye asesoramiento básico y herramientas esenciales para dar tus primeros pasos.</p>
+                    <button class="btn-transicion" onclick="mostrarDetalle('plan-inicial')">Ver más</button>
+                </div>
+                <div class="plan-imagen">
+                    <img src="img/plan-inicial.jpg" alt="Plan Inicial">
+                </div>
+            </div>
 
+            <!-- Plan Scholars -->
+            <div class="plan">
+                <div class="plan-texto">
+                    <h2 class="subtitulo">Scholars</h2>
+                    <p class="descripcion">Pensado para estudiantes. Incluye asesoría académica y soporte personalizado para alcanzar tus metas educativas.</p>
+                    <button class="btn-transicion" onclick="mostrarDetalle('plan-scholars')">Ver más</button>
+                </div>
+                <div class="plan-imagen">
+                    <img src="img/scholars.jpg" alt="Scholars">
+                </div>
+            </div>
+
+            <!-- Plan Golden Scholars -->
+            <div class="plan">
+                <div class="plan-texto">
+                    <h2 class="subtitulo">Golden Scholars</h2>
+                    <p class="descripcion">El paquete más completo. Ideal para quienes buscan una experiencia integral con máximo soporte.</p>
+                    <button class="btn-transicion" onclick="mostrarDetalle('plan-golden')">Ver más</button>
+                </div>
+                <div class="plan-imagen">
+                    <img src="img/golden-scholars.jpg" alt="Golden Scholars">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección dinámica para mostrar detalles de cada plan -->
+        <section id="detalle-plan" class="detalle-plan oculto">
+            <div class="detalle-contenido">
+                <h2 id="detalle-titulo" class="titulo">Detalle del Plan</h2>
+                <p id="detalle-texto" class="descripcion">Aquí aparecerá la información detallada del plan seleccionado.</p>
+                <button class="btn-cerrar" onclick="cerrarDetalle()">Cerrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Empresa - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarDetalle(plan) {
+            const detallePlan = document.getElementById('detalle-plan');
+            const detalleTitulo = document.getElementById('detalle-titulo');
+            const detalleTexto = document.getElementById('detalle-texto');
+
+            if (plan === 'plan-inicial') {
+                detalleTitulo.textContent = 'Plan Inicial';
+                detalleTexto.textContent = 'El Plan Inicial está diseñado para quienes están comenzando, proporcionando asesoría básica y recursos esenciales.';
+            } else if (plan === 'plan-scholars') {
+                detalleTitulo.textContent = 'Scholars';
+                detalleTexto.textContent = 'El Plan Scholars incluye soporte académico personalizado y recursos exclusivos para estudiantes.';
+            } else if (plan === 'plan-golden') {
+                detalleTitulo.textContent = 'Golden Scholars';
+                detalleTexto.textContent = 'El Plan Golden Scholars ofrece una experiencia premium con el máximo nivel de soporte y personalización.';
+            }
+
+            detallePlan.classList.remove('oculto');
+        }
+
+        function cerrarDetalle() {
+            const detallePlan = document.getElementById('detalle-plan');
+            detallePlan.classList.add('oculto');
+        }
+    </script>
 </body>
 </html>
-
