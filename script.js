@@ -11,10 +11,15 @@ function mostrarSecciones(seccionID) {
     } else {
         console.log("Sección no encontrada: " + seccionID); // Verifica si la sección no existe
     }
+
+    // Cerramos el menú flotante después de seleccionar una sección
+    const menu = document.getElementById('menu-flotante');
+    menu.style.display = 'none';
 }
 
-// Evento del menú
+// Evento para mostrar u ocultar el menú flotante
 document.getElementById('menu-btn').addEventListener('click', function() {
     const menu = document.getElementById('menu-flotante');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
+
