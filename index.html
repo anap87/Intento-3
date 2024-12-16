@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick Off Scholars</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Aileron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Grey+Qo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
 <!-- Sección de Inicio -->
 <header class="inicio">
     <img src="logodef.png" alt="Logo de Kick Off Scholars" class="logo">
@@ -19,71 +31,60 @@
     </div>
 </div>
 
-<!-- Secciones -->
-<div id="contenido">
-    <!-- Nuestros Servicios -->
-    <section id="nuestros-servicios" class="seccion">
-        <h1 class="titulo-fijo">Nuestros planes disponibles</h1>
-        <div class="contenido-seccion">
-            <div class="plan">
-                <h3>Plan Básico</h3>
-                <p>Descripción del Plan Básico.</p>
-                <button onclick="mostrarSubseccion('plan-basico')">¿Qué incluye?</button>
-            </div>
-            <div class="plan">
-                <h3>Plan Scholars</h3>
-                <p>Descripción del Plan Scholars.</p>
-                <button onclick="mostrarSubseccion('plan-scholars')">¿Qué incluye?</button>
-            </div>
-            <div class="plan">
-                <h3>Plan Golden Scholars</h3>
-                <p>Descripción del Plan Golden Scholars.</p>
-                <button onclick="mostrarSubseccion('plan-golden')">¿Qué incluye?</button>
-            </div>
-        </div>
-    </section>
+<!-- ¿Quiénes somos? -->
+<section id="quienes-somos" class="seccion ocultar">
+    <img src="quienes-somos.jpg" alt="Imagen principal" class="imagen-principal">
+    <h1>¿Quiénes somos?</h1>
+    <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
+</section>
 
-    <!-- Detalles de los Planes -->
-    <section id="plan-basico" class="seccion subseccion">
-        <h1 class="titulo-fijo">¿Qué incluye el Plan Básico?</h1>
-        <div class="contenido-seccion">
-            <p>Detalles del Plan Básico.</p>
-        </div>
-    </section>
-    <section id="plan-scholars" class="seccion subseccion">
-        <h1 class="titulo-fijo">¿Qué incluye el Plan Scholars?</h1>
-        <div class="contenido-seccion">
-            <p>Detalles del Plan Scholars.</p>
-        </div>
-    </section>
-    <section id="plan-golden" class="seccion subseccion">
-        <h1 class="titulo-fijo">¿Qué incluye el Plan Golden Scholars?</h1>
-        <div class="contenido-seccion">
-            <p>Detalles del Plan Golden Scholars.</p>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="seccion">
-        <h1 class="titulo-fijo">Contacto</h1>
-        <div class="contenido-seccion">
-            <img src="contacto.jpg" alt="Imagen de contacto" class="imagen-principal">
-            <div class="contacto-info">
-                <p>Teléfono: +1 234 567 890</p>
-                <p>Email: contacto@kickoffscholars.com</p>
-                <p>Instagram: @kickoffscholars</p>
-                <p>Facebook: Kick Off Scholars</p>
-                <p>TikTok: @kickoffscholars</p>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Sección ¿Quiénes somos? -->
-<section id="quienes-somos" class="seccion">
-    <h1 class="titulo-fijo">¿Quiénes somos?</h1>
-    <div class="contenido-seccion">
-        <img src="quienes-somos.jpg" alt="Imagen principal" class="imagen-principal">
-        <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
+<!-- Nuestros Servicios -->
+<section id="nuestros-servicios" class="seccion ocultar">
+    <h1>Nuestros planes disponibles</h1>
+    <div class="plan">
+        <h3>Plan Básico</h3>
+        <p>Descripción del Plan Básico.</p>
+        <button onclick="mostrarSecciones('plan-basico')">¿Qué incluye?</button>
+    </div>
+    <div class="plan">
+        <h3>Plan Scholars</h3>
+        <p>Descripción del Plan Scholars.</p>
+        <button onclick="mostrarSecciones('plan-scholars')">¿Qué incluye?</button>
+    </div>
+    <div class="plan">
+        <h3>Plan Golden Scholars</h3>
+        <p>Descripción del Plan Golden Scholars.</p>
+        <button onclick="mostrarSecciones('plan-golden')">¿Qué incluye?</button>
     </div>
 </section>
+
+<!-- Detalles de los Planes -->
+<section id="plan-basico" class="seccion ocultar">
+    <h2>¿Qué incluye el Plan Básico?</h2>
+    <p>Detalles del Plan Básico.</p>
+</section>
+<section id="plan-scholars" class="seccion ocultar">
+    <h2>¿Qué incluye el Plan Scholars?</h2>
+    <p>Detalles del Plan Scholars.</p>
+</section>
+<section id="plan-golden" class="seccion ocultar">
+    <h2>¿Qué incluye el Plan Golden Scholars?</h2>
+    <p>Detalles del Plan Golden Scholars.</p>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="seccion ocultar">
+    <img src="contacto.jpg" alt="Imagen de contacto" class="imagen-principal">
+    <div class="contacto-info">
+        <p>Teléfono: +1 234 567 890</p>
+        <p>Email: contacto@kickoffscholars.com</p>
+        <p>Instagram: @kickoffscholars</p>
+        <p>Facebook: Kick Off Scholars</p>
+        <p>TikTok: @kickoffscholars</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
