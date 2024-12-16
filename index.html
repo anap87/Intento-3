@@ -104,29 +104,24 @@
 // Mostrar sección principal
 function mostrarSecciones(seccionID) {
     const secciones = document.querySelectorAll('.seccion');
+    // Primero ocultamos todas las secciones
     secciones.forEach(seccion => seccion.classList.remove('activa'));
 
-    const menu = document.getElementById('menu-flotante');
-    menu.style.display = 'none'; // Oculta el menú
-
+    // Buscamos la sección que se debe mostrar
     const seccionSeleccionada = document.getElementById(seccionID);
     if (seccionSeleccionada) {
+        // Agregamos la clase activa para mostrarla
         seccionSeleccionada.classList.add('activa');
+    } else {
+        console.log("Sección no encontrada: " + seccionID); // Verifica si la sección no existe
     }
+
+    // Cerramos el menú flotante después de seleccionar una sección
+    const menu = document.getElementById('menu-flotante');
+    menu.style.display = 'none';
 }
 
-// Mostrar subsección dentro de "Nuestros Servicios"
-function mostrarSubseccion(subseccionID) {
-    const subsecciones = document.querySelectorAll('.subseccion');
-    subsecciones.forEach(subseccion => subseccion.classList.remove('activa'));
-
-    const subseccionSeleccionada = document.getElementById(subseccionID);
-    if (subseccionSeleccionada) {
-        subseccionSeleccionada.classList.add('activa');
-    }
-}
-
-// Mostrar/ocultar menú
+// Evento para mostrar u ocultar el menú flotante
 document.getElementById('menu-btn').addEventListener('click', function() {
     const menu = document.getElementById('menu-flotante');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
