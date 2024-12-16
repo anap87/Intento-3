@@ -27,5 +27,5 @@ document.querySelectorAll('.flecha').forEach(flecha => {
             siguientePlan.scrollIntoView({ behavior: 'smooth' });
         }
     });
-
 });
+
