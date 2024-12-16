@@ -18,14 +18,3 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     const menu = document.getElementById('menu-flotante');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
-
-// Lógica de las transiciones entre planes
-document.querySelectorAll('.flecha').forEach(flecha => {
-    flecha.addEventListener('click', () => {
-        const siguientePlan = flecha.closest('.plan').nextElementSibling;
-        if (siguientePlan) {
-            siguientePlan.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
