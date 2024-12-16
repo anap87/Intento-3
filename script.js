@@ -1,3 +1,4 @@
+// Mostrar sección principal
 function mostrarSecciones(seccionID) {
     const secciones = document.querySelectorAll('.seccion');
     // Primero ocultamos todas las secciones
@@ -22,4 +23,3 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     const menu = document.getElementById('menu-flotante');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
-
