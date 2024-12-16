@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kick Off Scholars</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Aileron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Grey+Qo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
 <!-- Sección de Inicio -->
 <header class="inicio">
     <img src="logodef.png" alt="Logo de Kick Off Scholars" class="logo">
@@ -33,15 +21,6 @@
 
 <!-- Secciones -->
 <div id="contenido">
-    <!-- ¿Quiénes somos? -->
-    <section id="quienes-somos" class="seccion">
-        <h1 class="titulo-fijo">¿Quiénes somos?</h1>
-        <div class="contenido-seccion">
-            <img src="quienes-somos.jpg" alt="Imagen principal" class="imagen-principal">
-            <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
-        </div>
-    </section>
-
     <!-- Nuestros Servicios -->
     <section id="nuestros-servicios" class="seccion">
         <h1 class="titulo-fijo">Nuestros planes disponibles</h1>
@@ -100,33 +79,11 @@
     </section>
 </div>
 
-<script>
-// Mostrar sección principal
-function mostrarSecciones(seccionID) {
-    const secciones = document.querySelectorAll('.seccion');
-    // Primero ocultamos todas las secciones
-    secciones.forEach(seccion => seccion.classList.remove('activa'));
-
-    // Buscamos la sección que se debe mostrar
-    const seccionSeleccionada = document.getElementById(seccionID);
-    if (seccionSeleccionada) {
-        // Agregamos la clase activa para mostrarla
-        seccionSeleccionada.classList.add('activa');
-    } else {
-        console.log("Sección no encontrada: " + seccionID); // Verifica si la sección no existe
-    }
-
-    // Cerramos el menú flotante después de seleccionar una sección
-    const menu = document.getElementById('menu-flotante');
-    menu.style.display = 'none';
-}
-
-// Evento para mostrar u ocultar el menú flotante
-document.getElementById('menu-btn').addEventListener('click', function() {
-    const menu = document.getElementById('menu-flotante');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-});
-</script>
-
-</body>
-</html>
+<!-- Sección ¿Quiénes somos? -->
+<section id="quienes-somos" class="seccion">
+    <h1 class="titulo-fijo">¿Quiénes somos?</h1>
+    <div class="contenido-seccion">
+        <img src="quienes-somos.jpg" alt="Imagen principal" class="imagen-principal">
+        <p>Somos una empresa dedicada a la asesoría profesional y deportiva, ayudando a nuestros clientes a alcanzar sus sueños académicos en el extranjero.</p>
+    </div>
+</section>
