@@ -12,6 +12,12 @@ h1, h2, h3 {
     color: #ad2521;
 }
 
+/*Quienes somos*/
+.seccion-quienes-somos {
+    margin: 20px;
+    text-align: center;
+}
+
 /* Inicio */
 .inicio {
     text-align: center; /* Centra todo el contenido dentro de la sección */
