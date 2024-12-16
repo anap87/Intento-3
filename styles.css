@@ -1,4 +1,4 @@
-/* General */
+ /* General */
 body {
     font-family: 'Aileron', sans-serif;
     margin: 0;
@@ -12,89 +12,46 @@ h1, h2, h3 {
     color: #ad2521;
 }
 
-/* Secciones internas */
-header {
-    text-align: center;
-    background-color: white;
-    padding: 20px 0;
-    position: relative;
-}
-
-header h1 {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Aileron', sans-serif;
-    color: #ad2521;
-    background-color: white;
-    z-index: 10;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-}
-
-header + * {
-    padding-top: 60px; /* Espacio para que el título no tape el contenido */
-}
-
-/* Contenido de las secciones */
-.seccion {
-    display: none;
+/* Inicio */
+.inicio {
+    text-align: center; /* Centra todo el contenido dentro de la sección */
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: space-between; /* Separa elementos entre parte superior e inferior */
     padding: 20px;
-    text-align: center;
-    background: white;
 }
 
-.seccion.activa {
-    display: block;
+/* Ajuste del logo */
+.logo {
+    width: 4cm; /* Tamaño máximo del logo */
+    object-fit: contain;
+    margin: 0 auto;
 }
 
-/* Estilo de imagen */
-.imagen-principal {
-    width: 100%;
-    max-height: 66vh;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-/* Estilo para cada sección de servicio */
-.plan {
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.plan-info {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.plan-imagen img {
-    max-width: 100%;
-    height: auto;
-}
-
-.flecha {
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    font-size: 2rem;
-    text-align: center;
-    background-color: transparent;
+/* Botón Menú */
+.boton {
+    background-color: #ad2521;
+    color: white;
     border: none;
-    color: #ad2521;
-    transition: transform 0.3s ease-in-out;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 60px; /* Ubica el botón en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Lo centra horizontalmente */
 }
 
-.flecha:hover {
-    transform: translateY(5px);
-}
-
-/* Menú desplegable */
+/* Menú Flotante */
+/* Menú Flotante */
 .menu-flotante {
     display: none;
     position: fixed;
@@ -108,38 +65,45 @@ header + * {
 
 .menu-contenido {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center;
     height: 100%;
     padding: 20px;
 }
 
-/* Menú */
+/* Contenedor para el nombre de la empresa y los ítems */
 .menu-centrado {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-between; /* Espacio entre los elementos */
+    width: 90%; /* Ajusta el ancho según sea necesario */
 }
 
 .menu-centrado h1 {
-    font-family: 'Righteous', sans-serif;
+    font-family: 'Righteous', sans-serif; /* Para "Kick" */
 }
 
 .menu-centrado h2 {
-    font-family: 'Grey Qo', cursive;
+    font-family: 'Grey Qo', cursive; /* Para "Scholars" */
+}
+
+.titulo-empresa {
+    display: flex;
+    justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
+    align-items: center;
+    margin: 0;
 }
 
 .menu-items {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    justify-content: flex-end; /* Alinea los ítems a la derecha del centro */
+    flex-direction: column; /* Alinea los items verticalmente */
     align-items: left;
     margin: 0;
 }
 
 .menu-items li {
     list-style: none;
-    margin: 20px;
+    margin: 20px; /* Ajusta el espacio entre los ítems */
 }
 
 .menu-items button {
@@ -156,17 +120,38 @@ header + * {
     color: #f9c2c2;
 }
 
-/* Contacto */
+
+/* Secciones */
+.seccion {
+    display: none;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 66vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 .contacto-info p {
     margin: 10px 0;
 }
 
-/* Media Queries */
+
+/* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
     .titulo-kickoff {
-        font-size: 2em;
+        font-size: 2em; /* Tamaño más pequeño en dispositivos móviles */
     }
     .titulo-scholars {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
     }
-}
+}  
