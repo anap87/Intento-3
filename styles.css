@@ -120,6 +120,10 @@ h1, h2, h3 {
     color: #f9c2c2;
 }
 
+.ocultar {
+    display: none;
+}
+
 
 /* Secciones */
 .seccion {
