@@ -27,4 +27,10 @@ document.querySelectorAll('.flecha').forEach(flecha => {
             siguientePlan.scrollIntoView({ behavior: 'smooth' });
         }
     });
+// Evento del menú hamburguesa
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('menu-flotante');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+
 });
