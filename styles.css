@@ -151,6 +151,99 @@ h1, h2, h3 {
     margin: 10px 0;
 }
 
+/* Estilo para la sección de planes */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.descripcion {
+    font-family: 'Aileron', sans-serif;
+    color: #ad2521;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/* Planes */
+.planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.plan-texto {
+    flex: 1;
+    padding: 10px;
+}
+
+.plan-imagen img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+}
+
+.btn-transicion {
+    background-color: #ad2521;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-transicion:hover {
+    background-color: #8e1f1f;
+}
+
+.detalle-plan {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.detalle-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.oculto {
+    display: none;
+}
+
+.btn-cerrar {
+    background-color: #ad2521;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
