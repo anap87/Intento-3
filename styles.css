@@ -51,7 +51,6 @@ h1, h2, h3 {
 }
 
 /* Menú Flotante */
-/* Menú Flotante */
 .menu-flotante {
     display: none;
     position: fixed;
@@ -145,7 +144,6 @@ h1, h2, h3 {
 .contacto-info p {
     margin: 10px 0;
 }
-
 
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
