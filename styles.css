@@ -196,6 +196,20 @@ h1, h2, h3 {
     margin: 0 auto;
 }
 
+
+/* Secciones de planes */
+.plan-detalle {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.plan-detalle.oculto {
+    display: none;
+}
+
+
 .subtitulo {
     font-size: 1.5rem;
     font-family: 'League Spartan', sans-serif;
