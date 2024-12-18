@@ -288,6 +288,7 @@ header {
     font-family: 'Aileron', sans-serif;
     font-size: 16px;
     color: #333;
+    margin: 10px;
 }
 
 .telefono, .correo, .social {
