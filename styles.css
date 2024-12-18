@@ -245,6 +245,42 @@ h1, h2, h3 {
     margin-top: 20px;
 }
 
+/*Menu paginas internas */
+header {
+    background-color: #4b4b4b; /* Color de fondo oscuro */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+.menu2 {
+    display: flex; /* Alineación flexible */
+    justify-content: space-between; /* Espacio entre el logo y los ítems */
+    align-items: center;
+}
+
+.logo2 img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+.menu-items2 {
+    list-style: none; /* Quita los estilos de lista */
+    display: flex; /* Alinea horizontalmente */
+    gap: 30px; /* Espacio entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items2 a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color de texto por defecto */
+    font-family: 'League Spartan', sans-serif; /* Fuente */
+    font-size: 1rem;
+    transition: color 0.3s; /* Transición de color */
+}
+
+.menu-items2 a:hover {
+    color: #ad2521; /* Rojo al pasar el cursor */
+}
+
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
     .titulo-kickoff {
