@@ -279,7 +279,7 @@ header {
 }
 
 .menu-items2 a:hover {
-    color: black; /* Rojo al pasar el cursor */
+    color: #d3d3d3; /* Rojo al pasar el cursor */
 }
 
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
