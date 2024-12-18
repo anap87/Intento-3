@@ -23,20 +23,40 @@
   </nav>
 </header>
 
-
 <main>  
     <div class="contacto-info">
-        <p>Teléfono USA: +1 786 922 3853</p>
-        <p>Whatsapp: +593 996 312 285</p>
-        <p>Email: kickoffscholars@gmail.com</p>
-        <p>Instagram: @kickoffscholars.usa</p>
-        <p>Facebook: Kick Off Scholars</p>
-        <p>TikTok: @kickoffscholars</p>
+        <!-- Teléfono -->
+        <p><span class="telefono" id="telefono">Teléfono USA: +1 786 922 3853</span></p>
+        <p><span class="telefono" id="telefono2">Whatsapp: +593 996 312 285</span></p>
+        
+        <!-- Email -->
+        <p><a href="mailto:kickoffscholars@gmail.com" class="correo">Email: kickoffscholars@gmail.com</a></p>
+        
+        <!-- Redes Sociales -->
+        <p><a href="https://www.instagram.com/kickoffscholars.usa" class="social" target="_blank">Instagram: @kickoffscholars.usa</a></p>
+        <p><a href="https://www.facebook.com/KickOffScholars" class="social" target="_blank">Facebook: Kick Off Scholars</a></p>
+        <p><a href="https://www.tiktok.com/@kickoffscholars" class="social" target="_blank">TikTok: @kickoffscholars</a></p>
     </div>
 </main>
 
+<script>
+    // Copiar número de teléfono al portapapeles
+    document.getElementById('telefono').addEventListener('click', function() {
+        navigator.clipboard.writeText('+1 786 922 3853').then(function() {
+            alert('Teléfono copiado al portapapeles');
+        }).catch(function(err) {
+            alert('Error al copiar el número');
+        });
+    });
+
+    document.getElementById('telefono2').addEventListener('click', function() {
+        navigator.clipboard.writeText('+593 996 312 285').then(function() {
+            alert('Teléfono copiado al portapapeles');
+        }).catch(function(err) {
+            alert('Error al copiar el número');
+        });
+    });
+</script>
 
 </body>
 </html>
-
-
