@@ -282,6 +282,49 @@ header {
     color: #d3d3d3; /* Rojo al pasar el cursor */
 }
 
+
+/* Pagina interna contacto*/
+.contacto-info {
+    font-family: 'Aileron', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.telefono, .correo, .social {
+    color: #ad2521;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.telefono:hover, .correo:hover, .social:hover {
+    color: #007bff;
+}
+
+/* Mensajes de "Copiar" o "Abrir" */
+.telefono:hover::after,
+.correo:hover::after,
+.social:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+/* Añadir data-tooltip a cada elemento */
+#telefono:hover::after { content: "Copiar"; }
+#telefono2:hover::after { content: "Copiar"; }
+.correo:hover::after { content: "Abrir"; }
+.social:hover::after { content: "Abrir"; }
+
+
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
     .titulo-kickoff {
