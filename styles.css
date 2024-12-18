@@ -247,7 +247,7 @@ h1, h2, h3 {
 
 /*Menu paginas internas */
 header {
-    background-color: #4b4b4b; /* Color de fondo oscuro */
+    background-color: #ad2521; /* Color de fondo rojo */
     padding: 10px 20px; /* Espaciado interno */
 }
 
@@ -258,7 +258,7 @@ header {
 }
 
 .logo2 img {
-    width: 2cm;/* Ajusta el tamaño del logo */
+    width: 2.5cm;/* Ajusta el tamaño del logo */
     align-items: left;
 }
 
@@ -279,7 +279,7 @@ header {
 }
 
 .menu-items2 a:hover {
-    color: #ad2521; /* Rojo al pasar el cursor */
+    color: black; /* Rojo al pasar el cursor */
 }
 
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
