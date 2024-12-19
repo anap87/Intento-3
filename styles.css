@@ -381,8 +381,8 @@ header {
     background-color: #ad2521; /* Color rojo */
     color: white; /* Texto en blanco */
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.5em; /* Tamaño del texto */
-    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño del texto */
+    padding: 8px 17px; /* Espaciado interno */
     border: none; /* Sin bordes adicionales */
     border-radius: 5px; /* Bordes ligeramente redondeados */
     text-decoration: none; /* Quita el subrayado del enlace */
