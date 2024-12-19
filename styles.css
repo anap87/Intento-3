@@ -154,9 +154,6 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-.contacto-info p {
-    margin: 10px 0;
-}
 
 /* Estilo para la sección de planes */
 .intro {
@@ -295,7 +292,7 @@ header {
     font-family: 'Aileron', sans-serif;
     font-size: 16px;
     color: #333;
-    margin: 2cm;
+    margin: 4cm;
 }
 
 .telefono, .correo, .social {
@@ -332,6 +329,125 @@ header {
 #telefono2:hover::after { content: "Copiar"; }
 .correo:hover::after { content: "Abrir"; }
 .social:hover::after { content: "Abrir"; }
+
+/* Estilo para los títulos y texto de contacto */
+.titulo {
+    font-size: 2.5em;
+    color: #ad2521; /* Rojo */
+    margin-left: 3cm;
+}
+
+.texto {
+    font-size: 1.2em;
+    color: black;
+    margin-left: 3cm;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    color: #ad2521; /* Rojo */
+}
+
+.contacto-left,
+.contacto-right {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.contacto-left {
+    padding-right: 2%;
+}
+
+.contacto-right {
+    padding-left: 2%;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #ad2521;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de contacto */
+.formulario {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.formulario h3 {
+    font-size: 1.8em;
+    color: #ad2521;
+}
+
+.formulario form {
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ad2521;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #7a1a15;
+    outline: none;
+}
+
+.formulario button {
+    background-color: #ad2521;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #7a1a15;
+}
+
+/* Estilos de los enlaces de teléfono */
+.telefono {
+    color: #ad2521;
+    cursor: pointer;
+}
+
+.telefono:hover {
+    text-decoration: underline;
+}
+
 
 
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
