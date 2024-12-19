@@ -375,3 +375,22 @@ header {
     font-size: 1em;
     line-height: 1.5;
 }
+
+.boton-rojo {
+    display: inline-block;
+    background-color: #ad2521; /* Color rojo */
+    color: white; /* Texto en blanco */
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em; /* Tamaño del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes adicionales */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+
+.boton-rojo:hover {
+    background-color: #c41f1b; /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom ligero */
+}
