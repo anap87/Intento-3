@@ -382,6 +382,13 @@ header {
     text-decoration: underline;
 }
 
+.social-icon {
+    width: 40px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    margin: 10px;
+}
+
+
 /* Formulario de contacto */
 .formulario {
     margin-top: 40px;
