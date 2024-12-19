@@ -354,7 +354,7 @@ header {
     max-width: 600px; /* Ancho máximo del texto */
     font-family: 'Aileron', sans-serif; /* Tipografía */
     color: #333; /* Color del texto */
-    text-align: left; /* Alineación del texto */
+    text-align: justify; /* Alineación del texto */
 }
 
 .intro h1 {
