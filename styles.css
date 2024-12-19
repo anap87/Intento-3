@@ -347,14 +347,23 @@ header {
     color: #ad2521; /* Rojo */
 }
 
+/* Alineación horizontal de los bloques de contacto */
 .contacto-left,
 .contacto-right {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    margin-bottom: 20px;
-    margin: 2cm;
+    width: 48%; /* Ajusta el tamaño de cada bloque */
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #ad2521; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados */
     text-align: left;
+    display: inline-block; /* Esto coloca los bloques en línea */
+    vertical-align: top; /* Alinea los bloques verticalmente */
+}
+
+/* Evitar márgenes adicionales innecesarios */
+.contacto-left p,
+.contacto-right p {
+    margin: 10px 0;
 }
 
 
