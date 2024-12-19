@@ -296,7 +296,7 @@ header {
 }
 
 .telefono, .correo, .social {
-    color: #1C1C1C;
+    color: #ad2521;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -334,14 +334,12 @@ header {
 .titulo {
     font-size: 2.5em;
     color: #ad2521; /* Rojo */
-    margin-left: 3cm;
 }
 
 .texto {
     font-family: 'Aileron', sans-serif;
     font-size: 1.2em;
     color: #333;
-    margin-left: 2cm;
 }
 
 .subtitulo {
@@ -355,6 +353,8 @@ header {
     width: 48%;
     vertical-align: top;
     margin-bottom: 20px;
+    margin: 2cm;
+    text-align: left;
 }
 
 .contacto-left {
