@@ -25,17 +25,47 @@
 
 <main>  
     <div class="contacto-info">
-        <!-- Teléfono -->
-        <p><span class="telefono" id="telefono">Teléfono USA: +1 786 922 3853</span></p>
-        <p><span class="telefono" id="telefono2">Whatsapp: +593 996 312 285</span></p>
+        <!-- Título y texto de contacto -->
+        <h1 class="titulo">Contáctanos</h1>
+        <p class="texto">¿Tienes alguna duda?</p>
         
-        <!-- Email -->
-        <p><a href="mailto:kickoffscholars@gmail.com" class="correo">Email: kickoffscholars@gmail.com</a></p>
+        <!-- Teléfono -->
+        <div class="contacto-left">
+            <h2 class="subtitulo">Nuestro email</h2>
+            <p><a href="mailto:kickoffscholars@gmail.com" class="correo">kickoffscholars@gmail.com</a></p>
+        </div>
+        
+        <!-- Whatsapp -->
+        <div class="contacto-right">
+            <h2 class="subtitulo">Nuestro Whatsapp</h2>
+            <p><span class="telefono" id="telefono">+1 786 922 3853</span></p>
+            <p><span class="telefono" id="telefono2">+593 996 312 285</span></p>
+        </div>
         
         <!-- Redes Sociales -->
-        <p><a href="https://www.instagram.com/kickoffscholars.usa" class="social" target="_blank">Instagram: @kickoffscholars.usa</a></p>
-        <p><a href="https://www.facebook.com/KickOffScholars" class="social" target="_blank">Facebook: Kick Off Scholars</a></p>
-        <p><a href="https://www.tiktok.com/@kickoffscholars" class="social" target="_blank">TikTok: @kickoffscholars</a></p>
+        <div class="redes-sociales">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.instagram.com/kickoffscholars.usa" class="social" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/KickOffScholars" class="social" target="_blank">Facebook</a>
+            <a href="https://www.tiktok.com/@kickoffscholars" class="social" target="_blank">TikTok</a>
+        </div>
+    </div>
+    
+    <!-- Formulario de contacto -->
+    <div class="formulario">
+        <h3>Envíanos un mensaje</h3>
+        <form action="#" method="POST">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            
+            <label for="correo">Tu correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
+            
+            <label for="mensaje">Tu mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </main>
 
@@ -57,6 +87,5 @@
         });
     });
 </script>
-
 </body>
 </html>
