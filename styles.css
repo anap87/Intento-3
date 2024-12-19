@@ -292,7 +292,7 @@ header {
     font-family: 'Aileron', sans-serif;
     font-size: 16px;
     color: #333;
-    margin: 4cm;
+    margin: 2cm;
 }
 
 .telefono, .correo, .social {
@@ -300,7 +300,7 @@ header {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    margin: 2cm;
+    
 }
 
 .telefono:hover, .correo:hover, .social:hover {
@@ -338,13 +338,14 @@ header {
 }
 
 .texto {
+    font-family: 'Aileron', sans-serif;
     font-size: 1.2em;
-    color: black;
-    margin-left: 3cm;
+    color: #333;
+    margin-left: 2cm;
 }
 
 .subtitulo {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #ad2521; /* Rojo */
 }
 
