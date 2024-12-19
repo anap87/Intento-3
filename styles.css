@@ -394,3 +394,8 @@ header {
     background-color: #c41f1b; /* Rojo más oscuro al pasar el mouse */
     transform: scale(1.05); /* Efecto de zoom ligero */
 }
+
+.contenedorbotonrojo {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+}
