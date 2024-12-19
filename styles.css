@@ -348,7 +348,6 @@ header {
 .intro .imagen-principal {
    height: 12cm; /* Altura máxima de 12 cm */
     width: auto; /* Mantiene las proporciones sin recortar la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
 .intro .texto {
