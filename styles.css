@@ -336,3 +336,37 @@ header {
         font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
     }
 }  
+
+/* quienes-somos.html */
+.intro .contenido {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra horizontalmente la sección completa */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.intro .imagen-principal {
+    width: 12cm; /* Tamaño de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.intro .texto {
+    max-width: 600px; /* Ancho máximo del texto */
+    font-family: 'Aileron', sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alineación del texto */
+}
+
+.intro h1 {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521; /* Rojo para el título */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1em;
+    line-height: 1.5;
+}
