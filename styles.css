@@ -400,6 +400,32 @@ header {
     margin: 10px;
 }
 
+/* Imagen contacto */
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contacto-left {
+    width: 50%; /* Ocupa la mitad del espacio horizontal */
+}
+
+.contacto-imagen {
+    width: 40%; /* Imagen ocupa el 40% del espacio horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-contacto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* Formulario de contacto */
 .formulario {
