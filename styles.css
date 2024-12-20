@@ -29,7 +29,6 @@ h1, h2, h3 {
     align-items: center; /* Centra horizontalmente */
     justify-content: space-between; /* Separa elementos entre parte superior e inferior */
     padding: 20px;
-    z-index: 1; /* Asegura que el contenido esté sobre el video */
 }
 
 .video-fondo {
