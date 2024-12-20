@@ -39,6 +39,7 @@ h1, h2, h3 {
     height: 100%;
     object-fit: cover; /* Asegura que el video cubra toda la pantalla */
     z-index: -1; /* Envía el video detrás de todo el contenido */
+    overflow: hidden;
 }
 
 /* Ajuste del logo */
