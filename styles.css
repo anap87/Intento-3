@@ -63,7 +63,7 @@ h1, h2, h3 {
     bottom: 60px; /* Ubica el botón en la parte inferior */
     left: 50%;
     transform: translateX(-50%); /* Lo centra horizontalmente */
-    z-index: 1;
+    
 }
 
 /* Menú Flotante */
