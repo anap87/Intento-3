@@ -272,6 +272,7 @@ header {
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo2 img {
@@ -289,14 +290,14 @@ header {
 
 .menu-items2 a {
     text-decoration: none; /* Sin subrayado */
-    color: white; /* Color de texto por defecto */
+    color: #ad2521; /* Color de texto por defecto */
     font-family: 'League Spartan', sans-serif; /* Fuente */
     font-size: 1rem;
     transition: color 0.3s; /* Transición de color */
 }
 
 .menu-items2 a:hover {
-    color: #d3d3d3; /* Rojo al pasar el cursor */
+    color: #f05a4a; /* Rojo al pasar el cursor */
 }
 
 
