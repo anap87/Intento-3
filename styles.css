@@ -264,15 +264,16 @@ h1, h2, h3 {
 
 /*Menu paginas internas */
 header {
-    background-color: white; /* Color de fondo rojo */
+    background-color: #ad2521; /* Color de fondo rojo */
+    padding: 5px 10px; /* Espaciado interno */
 }
 
 .menu2 {
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
-    background-color: rgba(173, 37, 33, 0.8);
- 
+}
+
 .logo2 img {
     width: 2.5cm;/* Ajusta el tamaño del logo */
     align-items: left;
@@ -288,16 +289,15 @@ header {
 
 .menu-items2 a {
     text-decoration: none; /* Sin subrayado */
-    color: #ad2521; /* Color de texto por defecto */
+    color: white; /* Color de texto por defecto */
     font-family: 'League Spartan', sans-serif; /* Fuente */
     font-size: 1rem;
     transition: color 0.3s; /* Transición de color */
 }
 
 .menu-items2 a:hover {
-    color: #f05a4a; /* Rojo al pasar el cursor */
+    color: #d3d3d3; /* Rojo al pasar el cursor */
 }
-
 
 /* Pagina interna contacto*/
 .contacto-info {
