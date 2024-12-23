@@ -562,3 +562,14 @@ header {
     display: flex;
     justify-content: center; /* Centra el botón horizontalmente */
 }
+
+/* Nuestros servicios pagina interna */
+
+.descripcion sin-vinetas {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
