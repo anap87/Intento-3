@@ -265,16 +265,14 @@ h1, h2, h3 {
 /*Menu paginas internas */
 header {
     background-color: white; /* Color de fondo rojo */
-    padding: 5px 10px; /* Espaciado interno */
 }
 
 .menu2 {
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
+    background-color: rgba(173, 37, 33, 0.8);
+ 
 .logo2 img {
     width: 2.5cm;/* Ajusta el tamaño del logo */
     align-items: left;
