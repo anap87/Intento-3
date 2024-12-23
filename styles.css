@@ -264,8 +264,8 @@ h1, h2, h3 {
 
 /*Menu paginas internas */
 header {
-    background-color: #ad2521; /* Color de fondo rojo */
-    padding: 10px 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo rojo */
+    padding: 5px 10px; /* Espaciado interno */
 }
 
 .menu2 {
