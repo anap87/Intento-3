@@ -571,5 +571,21 @@ header {
     align-items: center;
     height: 100%;
     padding: 20px;
+    font-family: 'Aileron', sans-serif;
 }
 
+
+.subtituloser {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+}
+
+
+
+.descriptionser {
+    font-family: 'Aileron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
