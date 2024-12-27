@@ -573,7 +573,8 @@ header {
 }
 
 .introser {
-    margin: 2cm;
+    margin-top: 2cm;
+    margin-left: 1cm;
     align-items: left;
     text-align: justify;
     background: #ffffff;
@@ -595,6 +596,15 @@ header {
     font-size: 2em;
     margin: 0;
     padding: 0;
+}
+
+.descripcionser {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: white;
 }
 
 .descriptionser {
