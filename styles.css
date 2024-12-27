@@ -573,10 +573,9 @@ header {
 }
 
 .introser {
-    margin-left: 2.5cm;
+    margin: 2cm;
     align-items: left;
     text-align: justify;
-    padding: 20px;
     background: #ffffff;
 }
 
