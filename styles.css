@@ -565,6 +565,15 @@ header {
 
 /* Nuestros servicios pagina interna */
 
+.tituloser {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+}
+
+.introser {
+    margin-left: 2.5cm;
+    align-items: left;
+
 .descripcion sin-vinetas {
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
