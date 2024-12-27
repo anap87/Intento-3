@@ -566,13 +566,17 @@ header {
 /* Nuestros servicios pagina interna */
 
 .tituloser {
-    font-family: 'League Spartan', sans-serif;
-    color: #ad2521;
+    font-size: 2.5em;
+    color: #ad2521; /* Rojo */
 }
 
 .introser {
     margin-left: 2.5cm;
     align-items: left;
+    text-align: justify;
+    padding: 20px;
+    background: #ffffff;
+}
 
 .descripcion sin-vinetas {
     display: flex;
@@ -587,14 +591,25 @@ header {
 .subtituloser {
     font-family: 'League Spartan', sans-serif;
     color: #ad2521;
+    font-size: 2em;
 }
-
-
 
 .descriptionser {
     font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
     margin: 0;
     padding: 0;
     background: white;
-    color: black;
+}
+
+.plan-detalle oculto {
+    width: 48%; /* Ajusta el tamaño de cada bloque */
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #ad2521; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: left;
+    display: inline-block; /* Esto coloca los bloques en línea */
+    vertical-align: top; /* Alinea los bloques verticalmente */
 }
