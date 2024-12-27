@@ -618,6 +618,7 @@ header {
 }
 
 .plan-detalle {
+    margin: 1cm;
     width: 48%; /* Ajusta el tamaño de cada bloque */
     padding: 20px;
     background-color: transparent;
@@ -625,4 +626,8 @@ header {
     border-radius: 10px; /* Bordes redondeados */
     text-align: left;
     display: inline-block; /* Esto coloca los bloques en línea */
+}
+
+.oculto {
+    display: none; /* Oculta el elemento por defecto */
 }
