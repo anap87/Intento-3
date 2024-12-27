@@ -617,7 +617,7 @@ header {
     background: white;
 }
 
-.plan-detalle oculto {
+.plan-detalle {
     width: 48%; /* Ajusta el tamaño de cada bloque */
     padding: 20px;
     background-color: transparent;
