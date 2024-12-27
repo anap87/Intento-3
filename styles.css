@@ -634,4 +634,10 @@ header {
     display: none; /* Oculta el elemento por defecto */
 }
 
+.imagen-golden {
+    text-align: center; /* Alinea todo el contenido del contenedor al centro */
+}
 
+.imagen-final-estilo {
+    max-width: 80%; /* Limita el ancho de la imagen */
+}
