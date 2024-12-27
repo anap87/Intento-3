@@ -588,6 +588,7 @@ header {
     padding: 20px;
     font-family: 'Aileron', sans-serif;
     font-size: 1.2em;
+    margin-top: 1cm;
 }
 
 
@@ -597,6 +598,7 @@ header {
     font-size: 2em;
     margin: 0;
     padding: 0;
+    margin-bottom: 0.4cm;
 }
 
 .descripcionser {
@@ -631,3 +633,5 @@ header {
 .oculto {
     display: none; /* Oculta el elemento por defecto */
 }
+
+
