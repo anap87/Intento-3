@@ -603,7 +603,7 @@ header {
     font-family: 'Aileron', sans-serif;
     font-size: 1.2em;
     color: #333;
-    margin: 0;
+    margin-top: 1cm;
     padding: 0;
     background: white;
 }
@@ -618,7 +618,7 @@ header {
 }
 
 .plan-detalle {
-    margin: 1cm;
+    margin: 2cm;
     width: 48%; /* Ajusta el tamaño de cada bloque */
     padding: 20px;
     background-color: transparent;
