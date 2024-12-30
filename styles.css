@@ -641,3 +641,102 @@ header {
 .imagen-final-estilo {
     max-width: 80%; /* Limita el ancho de la imagen */
 }
+
+
+/* cambios para celulares */
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+    /* General */
+    body {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Reduce tamaño de los títulos */
+    }
+
+    /* Sección "Inicio" */
+    .inicio {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 3cm; /* Reduce el tamaño del logo */
+    }
+
+    .boton {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        bottom: 20px;
+    }
+
+    /* Menú flotante */
+    .menu-flotante .menu-contenido {
+        flex-direction: column; /* Alinea los elementos verticalmente */
+    }
+
+    .menu-items li {
+        margin: 10px; /* Reduce el espacio entre elementos */
+    }
+
+    /* Quiénes somos */
+    .intro .contenido {
+        flex-direction: column; /* Cambia a una sola columna */
+    }
+
+    .intro .imagen-principal {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Ajusta altura automáticamente */
+    }
+
+    .intro .texto {
+        max-width: 100%; /* Texto ocupa todo el ancho */
+    }
+
+    /* Planes */
+    .planes {
+        flex-direction: column; /* Cambia a una sola columna */
+    }
+
+    .plan {
+        flex-direction: column; /* Cambia a una sola columna */
+        margin: 10px 0;
+    }
+
+    .plan-imagen img {
+        max-width: 100%; /* Imagen ocupa todo el ancho */
+    }
+
+    .plan-texto {
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Contacto */
+    .contacto-contenedor {
+        flex-direction: column; /* Alinea los bloques verticalmente */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .contacto-left, .contacto-imagen {
+        width: 100%; /* Cada bloque ocupa todo el ancho */
+    }
+
+    .imagen-contacto {
+        margin: 20px auto; /* Centra la imagen */
+    }
+
+    /* Formulario */
+    .formulario form {
+        width: 100%; /* Ajusta el ancho del formulario */
+        padding: 15px;
+    }
+
+    .formulario input, .formulario textarea {
+        font-size: 1rem;
+    }
+
+    /* Redes sociales */
+    .redes-sociales a {
+        font-size: 1.5em; /* Ajusta el tamaño de íconos */
+    }
+}
