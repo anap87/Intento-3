@@ -750,4 +750,23 @@ header {
         text-align: center; /* Alinear el texto al centro */
         padding: 0 10px; /* Agregar algo de espacio a los lados para que no quede tan pegado */
     }
+
+    .menu2 {
+        flex-direction: column; /* Pone los elementos del menú en una columna */
+        align-items: flex-start; /* Alinea los ítems a la izquierda */
+    }
+
+    .menu-items2 {
+        display: block; /* Los elementos se muestran de manera vertical */
+        margin-top: 10px;
+    }
+
+    .menu-items2 a {
+        font-size: 0.9rem; /* Reducir tamaño de fuente en móviles */
+        padding: 10px 0; /* Espaciado entre los elementos del menú */
+    }
+
+    .menu-items2 a:hover {
+        color: #d3d3d3; /* Rojo al pasar el cursor */
+    }
 }
