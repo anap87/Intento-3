@@ -685,7 +685,7 @@ header {
     }
 
     .intro .imagen-principal {
-        width: 100%; /* Imagen ocupa todo el ancho */
+        width: 80%; /* Imagen ocupa todo el ancho */
         height: auto; /* Ajusta altura automáticamente */
     }
 
@@ -727,7 +727,7 @@ header {
 
     /* Formulario */
     .formulario form {
-        width: 100%; /* Ajusta el ancho del formulario */
+        width: 80%; /* Ajusta el ancho del formulario */
         padding: 15px;
     }
 
