@@ -743,12 +743,13 @@ header {
     .titulo {
         font-size: 1.8rem; /* Reducir tamaño de fuente para dispositivos más pequeños */
         text-align: center; /* Alinear el título al centro */
+        
     }
 
     .descripcionser {
         font-size: 1rem; /* Reducir tamaño de fuente para móviles */
         text-align: center; /* Alinear el texto al centro */
-        padding: 0 10px; /* Agregar algo de espacio a los lados para que no quede tan pegado */
+        padding: 0 4px; /* Agregar algo de espacio a los lados para que no quede tan pegado */
     }
 
     .menu2 {
