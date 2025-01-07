@@ -54,12 +54,11 @@ h1, h2, h3 {
 
 /* Botón Menú */
 .boton {
-    background-color: #ad2521;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 1px solid white;
     padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 10px;
     cursor: pointer;
     position: absolute;
     bottom: 60px; /* Ubica el botón en la parte inferior */
