@@ -299,7 +299,7 @@ header {
 }
 
 .menu-items2 li:last-child {
-    margin-right: 20px; /* Aumenta el margen si es necesario para el último elemento */
+    margin-right: 30px; /* Aumenta el margen si es necesario para el último elemento */
 }
 
 .menu-items2 a {
