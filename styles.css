@@ -362,6 +362,7 @@ header {
 .titulo {
     font-size: 2.5em;
     color: #ad2521; /* Rojo */
+    margin-top: 70px;
 }
 
 .texto {
