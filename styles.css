@@ -124,9 +124,13 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.titulo-kickoff {
+    margin-bottom: 5px;
+}
+ 
 .titulo-scholars {
     font-family: 'Grey Qo', cursive;
-    font-size: 48px;
+    font-size: 80px;
     margin-top: 0;
 }
 
