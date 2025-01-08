@@ -106,7 +106,8 @@ h1, h2, h3 {
 .menu-logo {
     display: flex;
     flex-direction: column; /* Organiza los títulos en una columna */
-    gap: 2px; /* Espaciado entre los títulos */
+    justify-content: center;
+    gap: 0.2px; /* Espaciado entre los títulos */
     padding: 0; /* Elimina cualquier espacio interno */
 }
 
