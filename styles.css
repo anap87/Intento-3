@@ -579,18 +579,27 @@ header {
     position: relative;
 }
 
+
+.contenidoqs {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; /* Centra horizontalmente la sección completa */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
 .titulosqs {
     color: white;
     align: center;
 }
 
 .titulo-principalqs {
-    margin-top: 1.5cm;
     font-size: 2rem; /* Ajusta el tamaño según necesites */
+    color: white;
 }
 
-.titulo-secundario {
+.titulo-secundarioqs {
     font-size: 4rem;
+    color: white;
 }
 
 /* Estilos para la sección de fondo blanco con el video */
@@ -601,7 +610,7 @@ header {
 }
 
 .titulo-video {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     align: center;
 }
