@@ -104,8 +104,8 @@ h1, h2, h3 {
 
 .menu-logo {
     display: flex;
-    justify-content: flex-start;  /* Alinea el nombre de la empresa a la izquierda del centro */
-    align-items: center;
+    justify-content: center;  /* Alinea el nombre de la empresa a la izquierda del centro */
+    align-items: flex-start;
     flex-direction: column; /* Organiza los elementos en una columna */
     padding: 0; /* Elimina cualquier espacio interno */
     gap: 20px;
@@ -129,8 +129,8 @@ h1, h2, h3 {
     justify-content: center; /* Centra los elementos en el eje principal (vertical con flex-direction: column) */
     flex-direction: column; /* Eje principal vertical */
     align-items: flex-start; /* Centra los elementos en el eje transversal (horizontal) */
-    margin: 0;
     text-align: left;
+    padding: 0;
 }
 
 .menu-items li {
