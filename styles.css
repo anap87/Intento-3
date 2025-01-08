@@ -128,8 +128,9 @@ h1, h2, h3 {
     display: flex;
     justify-content: flex-end; /* Alinea los ítems a la derecha del centro */
     flex-direction: column; /* Alinea los items verticalmente */
-    align-items: left;
+    align-items: center;
     margin: 0;
+    text-align: left;
 }
 
 .menu-items li {
