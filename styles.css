@@ -711,8 +711,7 @@ body.pagina-especial .menu2.scrolled {
     width: 48%; /* Ajusta el tamaño de cada bloque */
     padding: 20px;
     background-color: transparent;
-    border: 2px solid #ad2521; /* Borde rojo */
-    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ad2521;
     text-align: left;
     display: inline-block; /* Esto coloca los bloques en línea */
 }
