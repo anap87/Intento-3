@@ -233,24 +233,24 @@ body.pagina-especial .menu2.scrolled {
 
 .contenidoqs {
     display: flex;
-    margin-top: 20px;
     justify-content: center; /* Centra horizontalmente la sección completa */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
 }
 
 .titulosqs {
     color: white;
-    align: center;
 }
 
 .titulo-principalqs {
     font-size: 2rem; /* Ajusta el tamaño según necesites */
     color: white;
+    margin-top: 40px;
+ 
 }
 
 .titulo-secundarioqs {
     font-size: 4rem;
     color: white;
+    margin-top: 15px;
 }
 
 /* Seccion de quienes somos: mahee con balon */
@@ -271,7 +271,6 @@ body.pagina-especial .menu2.scrolled {
     max-width: 600px; /* Ancho máximo del texto */
     font-family: 'Aileron', sans-serif; /* Tipografía */
     color: #333; /* Color del texto */
-    text-align: justify; /* Alineación del texto */
 }
 
 .intro h1 {
@@ -285,6 +284,7 @@ body.pagina-especial .menu2.scrolled {
 .intro p {
     font-size: 1em;
     line-height: 1.5;
+    text-align: justify; /* Alineación del texto */
 }
 
 .imagen-principal {
