@@ -270,8 +270,8 @@ h1, h2, h3 {
 
 /*Menu paginas internas */
 header {
-    background-color: #ad2521; /* Color de fondo rojo */
-    padding: 10px 20px; /* Espaciado interno */
+    background-color: transparent; /* Color de fondo ninguno */
+    padding: 0; /* Espaciado interno */
 }
 
 .menu2 {
@@ -632,13 +632,13 @@ header {
 }
 
 /* Estilo inicial del menú con fondo transparente */
-.pagina-especial .menu2 {
+body.pagina-especial .menu2 {
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
 
 /* Estilo del menú al hacer scroll */
-.pagina-especial .menu2.menu-scroll {
+body.pagina-especial .menu2.scrolled {
     background-color: #5b7e52; /* Color verde, ajusta según lo desees */
 }
 
