@@ -99,13 +99,11 @@ h1, h2, h3 {
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center;
     height: 100%;
-    padding: 20px;
+    padding: 60px;
 }
 
 .menu-logo {
     display: flex;
-    justify-content: center;  /* Alinea el nombre de la empresa a la izquierda del centro */
-    align-items: flex-start;
     flex-direction: column; /* Organiza los elementos en una columna */
     padding: 0; /* Elimina cualquier espacio interno */
     gap: 20px;
