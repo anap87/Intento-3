@@ -238,6 +238,7 @@ body.pagina-especial .menu2.scrolled {
 }
 
 .titulo-principalqs {
+    font-family: "Zen Kaku Gothic Antique", serif;
     font-size: 2rem; /* Ajusta el tamaño según necesites */
     color: white;
     margin-top: 10px;
