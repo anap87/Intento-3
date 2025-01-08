@@ -104,16 +104,17 @@ h1, h2, h3 {
 
 .menu-logo {
     display: flex;
-    /* justify-content: flex-start;  Alinea el nombre de la empresa a la izquierda del centro */
+    justify-content: flex-start;  /* Alinea el nombre de la empresa a la izquierda del centro */
     align-items: center;
-    justify-content: space-between; /* Espacio entre los elementos */
     flex-direction: column; /* Organiza los elementos en una columna */
     padding: 0; /* Elimina cualquier espacio interno */
+    gap: 20px;
 }
 
 .titulo-kickoff {
     text-align: left;   
     font-family: 'DM Serif Text', serif;
+    margin-bottom: 0;
 }
  
 .titulo-scholars {
