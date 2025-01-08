@@ -65,8 +65,14 @@ h1, h2, h3 {
     left: 50%;
     transform: translateX(-50%); /* Lo centra horizontalmente */
     z-index: 1; /* Asegura que el botón esté sobre el video */
+    transition: all 0.3s ease;
 }
 
+.boton:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  text-shadow: 0px 0px 5px white; /* Crea un delineado suave en el texto */
+  cursor: pointer; /* Cambia el cursor a la mano */
+}
 
 /* Menú Flotante */
 /* Menú Flotante */
