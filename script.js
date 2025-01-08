@@ -21,13 +21,15 @@ document.getElementById('menu-btn').addEventListener('click', function() {
 
 // Menu pagina interna quienes somos
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menu = document.querySelector(".menu2"); // Aquí seleccionamos el menú con la clase menu2
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 100) { // Cambia 100 según el punto de scroll donde desees el cambio
-            menu.classList.add("menu-scroll");
+// Solo aplica el cambio de fondo si body tiene la clase pagina-especial
+if (document.body.classList.contains('pagina-especial')) {
+    window.addEventListener('scroll', function () {
+        const menu = document.querySelector('.menu2');
+        if (window.scrollY > 50) {
+            menu.classList.add('scrolled'); // Aplica color de fondo al hacer scroll
         } else {
-            menu.classList.remove("menu-scroll");
+            menu.classList.remove('scrolled'); // Restaura el fondo transparente
         }
     });
-});
+}
+
