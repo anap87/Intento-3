@@ -117,7 +117,7 @@ h1, h2, h3 {
     font-family: 'Grey Qo'; /* Para "Scholars" */
 }
 
-.titulo-empresa {
+.menu-logo {
     display: flex;
     justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
     align-items: center;
