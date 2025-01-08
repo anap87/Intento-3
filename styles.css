@@ -552,7 +552,7 @@ header {
     font-family: 'League Spartan', sans-serif;
     font-size: 1em; /* Tamaño del texto */
     padding: 8px 17px; /* Espaciado interno */
-    border: 1px #ad2521; 
+    border: 1px solid #ad2521; 
     text-decoration: none; /* Quita el subrayado del enlace */
     cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
     transition: background-color 0.3s, transform 0.2s; /* Animación suave */
