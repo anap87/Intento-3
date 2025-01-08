@@ -298,6 +298,10 @@ header {
     padding: 0;
 }
 
+.menu-items2 li:last-child {
+    margin-right: 20px; /* Aumenta el margen si es necesario para el último elemento */
+}
+
 .menu-items2 a {
     text-decoration: none; /* Sin subrayado */
     color: white; /* Color de texto por defecto */
