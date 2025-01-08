@@ -275,7 +275,7 @@ header {
 }
 
 .menu2 {
-    background-color: #5b7e52;
+    background-color: rgba(91, 126, 82, 0.8); /* Verde con 80% de opacidad */
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
