@@ -109,6 +109,7 @@ h1, h2, h3 {
     justify-content: center;
     gap: 0.2px; /* Espaciado entre los títulos */
     padding: 0; /* Elimina cualquier espacio interno */
+    box-sizing: border-box;
 }
 
 .titulo-kickoff {
