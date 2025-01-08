@@ -278,6 +278,10 @@ header {
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
+    position: fixed;  /* Hace que el menú se quede fijo en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;  /* Asegura que el menú esté por encima de otros elementos */
 }
 
 .logo2 img {
@@ -302,7 +306,7 @@ header {
 }
 
 .menu-items2 a:hover {
-    color: #d3d3d3; /* Rojo al pasar el cursor */
+    color: #d3d3d3; /* plomo al pasar el cursor */
 }
 
 /* Pagina interna contacto*/
