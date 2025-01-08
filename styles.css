@@ -122,6 +122,10 @@ h1, h2, h3 {
     justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
     align-items: center;
     margin: 0;
+    display: flex; /* Establece un contenedor flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 0; /* Elimina cualquier espacio interno */
 }
 
 .titulo-kickoff {
