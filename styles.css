@@ -230,7 +230,7 @@ body.pagina-especial .menu2.scrolled {
     display: flex;
     justify-content: center; /* Centra horizontalmente la sección completa */
     align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
-    margin-top: 5vh; /* Agrega un margen superior relativo a la altura de la ventana */
+    margin-top: 10px; /* Agrega un margen superior relativo a la altura de la ventana */
 }
 
 .titulosqs {
