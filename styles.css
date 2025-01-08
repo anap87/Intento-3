@@ -275,6 +275,7 @@ header {
 }
 
 .menu2 {
+    background-color: #5b7e52;
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacio entre el logo y los ítems */
     align-items: center;
@@ -299,7 +300,7 @@ header {
 }
 
 .menu-items2 li:last-child {
-    margin-right: 30px; /* Aumenta el margen si es necesario para el último elemento */
+    margin-right: 40px; /* Aumenta el margen si es necesario para el último elemento */
 }
 
 .menu-items2 a {
