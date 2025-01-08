@@ -72,6 +72,7 @@ h1, h2, h3 {
   transform: scale(1.1); /* Aumenta ligeramente el tamaño */
   text-shadow: 0px 0px 5px white; /* Crea un delineado suave en el texto */
   cursor: pointer; /* Cambia el cursor a la mano */
+  transform-origin: center; 
 }
 
 /* Menú Flotante */
