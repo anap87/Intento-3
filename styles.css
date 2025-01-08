@@ -282,6 +282,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;  /* Asegura que el menú esté por encima de otros elementos */
+    padding: 0 20px; /* Esto agrega espacio en los lados izquierdo y derecho */
 }
 
 .logo2 img {
