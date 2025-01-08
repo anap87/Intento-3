@@ -654,12 +654,11 @@ body.pagina-especial .menu2.scrolled {
 .tituloser {
     font-size: 2.5em;
     color: #ad2521; /* Rojo */
-    margin-top: 70px;
     padding: 0;
 }
 
 .introser {
-    margin-top: 2cm;
+    margin-top: 70px;
     margin-left: 2cm;
     align-items: left;
     text-align: justify;
