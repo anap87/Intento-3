@@ -117,18 +117,15 @@ h1, h2, h3 {
     font-family: 'Grey Qo'; /* Para "Scholars" */
 }
 
-.grey-qo-regular {
-  font-family: "Grey Qo", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 .titulo-empresa {
     display: flex;
     justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
     align-items: center;
     margin: 0;
+}
+
+.titulo-scholars {
+    font-family: 'Grey Qo', cursive;
 }
 
 .menu-items {
