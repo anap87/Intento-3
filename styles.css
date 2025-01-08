@@ -102,25 +102,11 @@ h1, h2, h3 {
     padding: 20px;
 }
 
-/* Contenedor para el nombre de la empresa y los ítems */
-.menu-centrado {
-    display: flex;
-    justify-content: space-between; /* Espacio entre los elementos */
-    width: 90%; /* Ajusta el ancho según sea necesario */
-}
-
-.menu-centrado h1 {
-    font-family: 'Righteous', sans-serif; /* Para "Kick" */
-}
-
-.menu-centrado h2 {
-    font-family: 'Grey Qo'; /* Para "Scholars" */
-}
-
 .menu-logo {
     display: flex;
-    justify-content: flex-start; /* Alinea el nombre de la empresa a la izquierda del centro */
+    /* justify-content: flex-start;  Alinea el nombre de la empresa a la izquierda del centro */
     align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
     flex-direction: column; /* Organiza los elementos en una columna */
     padding: 0; /* Elimina cualquier espacio interno */
 }
