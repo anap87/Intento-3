@@ -126,7 +126,8 @@ h1, h2, h3 {
 }
 
 .titulo-kickoff {
-    text-align: right;    
+    text-align: right;   
+    font-family: 'DM Serif Text', serif;
 }
  
 .titulo-scholars {
