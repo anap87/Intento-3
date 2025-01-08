@@ -66,12 +66,12 @@ h1, h2, h3 {
     transform: translateX(-50%); /* Lo centra horizontalmente */
     z-index: 1; /* Asegura que el botón esté sobre el video */
     transition: all 0.3s ease;
+    cursor: pointer; /* Cambia el cursor a la mano */ 
 }
 
 .boton:hover {
   transform: scale(1.05); /* Efecto de zoom ligero */
   text-shadow: 0px 0px 5px white; /* Crea un delineado suave en el texto */
-  cursor: pointer; /* Cambia el cursor a la mano */ 
 }
 
 /* Menú Flotante */
@@ -547,12 +547,12 @@ header {
 
 .boton-rojo {
     display: inline-block;
-    background-color: transparent; /* Color rojo */
-    color: #ad2521; /* Texto en blanco */
+    background-color: transparent; /* Color transparente */
+    color: #ad2521; /* Texto en rojo */
     font-family: 'League Spartan', sans-serif;
     font-size: 1em; /* Tamaño del texto */
     padding: 8px 17px; /* Espaciado interno */
-    border: 1px #ad2521; /* Sin bordes adicionales */
+    border: 1px #ad2521; 
     text-decoration: none; /* Quita el subrayado del enlace */
     cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
     transition: background-color 0.3s, transform 0.2s; /* Animación suave */
@@ -566,6 +566,58 @@ header {
     display: flex;
     justify-content: center; /* Centra el botón horizontalmente */
 }
+
+/* Sección de la imagen de fondo */
+.imagen-fondoqs {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa toda la altura de la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.titulosqs {
+    color: white;
+    align: center;
+}
+
+.titulo-principalqs {
+    margin-top: 1.5cm;
+    font-size: 2rem; /* Ajusta el tamaño según necesites */
+}
+
+.titulo-secundario {
+    font-size: 4rem;
+}
+
+/* Estilos para la sección de fondo blanco con el video */
+.fondo-blanco {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.titulo-video {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    align: center;
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+
 
 /* Nuestros servicios pagina interna */
 
