@@ -12,14 +12,20 @@ h1, h2, h3 {
     color: #ad2521;
 }
 
-/*Quienes somos*/
-.seccion-quienes-somos {
-    margin: 20px;
+.intro {
     text-align: center;
+    padding: 20px;
+    background: #ffffff;
 }
 
-/* Inicio */
-/* Ajustes para el video de fondo */
+.descripcion {
+    font-family: 'Aileron', sans-serif;
+    color: #ad2521;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%;
+}
+/* Inicio: index.html......................................................................................... */
 .video-fondo {
     position: fixed; /* Hace que el video permanezca fijo al desplazarse */
     top: 0;
@@ -152,122 +158,7 @@ h1, h2, h3 {
     color: #f9c2c2;
 }
 
-
-/* Secciones */
-.seccion {
-    display: none;
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
-    background: white;
-}
-
-.seccion.activa {
-    display: block;
-}
-
-.imagen-principal {
-    width: 100%;
-    max-height: 66vh;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-
-/* Estilo para la sección de planes */
-.intro {
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
-}
-
-.descripcion {
-    font-family: 'Aileron', sans-serif;
-    color: #ad2521;
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 80%;
-}
-
-/* Planes */
-.planes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.plan {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.plan-texto {
-    flex: 1;
-    padding: 10px;
-}
-
-.plan-imagen img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-}
-
-.subtitulo {
-    font-size: 1.5rem;
-    font-family: 'League Spartan', sans-serif;
-    color: #ad2521;
-}
-
-.btn-transicion {
-    background-color: transparent;
-    color: #ad2521;
-    border: 1px solid #ad2521;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
-}
-
-.btn-transicion:hover {
-    transform: scale(1.05); /* Efecto de zoom ligero */
-}
-
-.detalle-plan {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
-}
-
-.detalle-contenido {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.oculto {
-    display: none;
-}
-
-.btn-cerrar {
-    background-color: #ad2521;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-/*Menu paginas internas */
+/*Menu2 paginas internas................................................................................................. */
 header {
     background-color: transparent; /* Color de fondo ninguno */
     padding: 0; /* Espaciado interno */
@@ -314,12 +205,287 @@ header {
     color: #d3d3d3; /* plomo al pasar el cursor */
 }
 
-/* Pagina interna contacto*/
+
+/* Quienes somos: quienes-somos.html.................................................................................... */
+
+/* Estilo inicial del menú con fondo transparente */
+body.pagina-especial .menu2 {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del menú al hacer scroll */
+body.pagina-especial .menu2.scrolled {
+    background-color: #5b7e52; /* Color verde, ajusta según lo desees */
+}
+
+.imagen-fondoqs {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa toda la altura de la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.contenidoqs {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; /* Centra horizontalmente la sección completa */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.titulosqs {
+    color: white;
+    align: center;
+}
+
+.titulo-principalqs {
+    font-size: 2rem; /* Ajusta el tamaño según necesites */
+    color: white;
+}
+
+.titulo-secundarioqs {
+    font-size: 4rem;
+    color: white;
+}
+
+/* Seccion de quienes somos: mahee con balon */
+
+.intro .contenido {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra horizontalmente la sección completa */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.intro .imagen-principal {
+   height: 12cm; /* Altura máxima de 12 cm */
+    width: auto; /* Mantiene las proporciones sin recortar la imagen */
+}
+
+.intro .texto {
+    max-width: 600px; /* Ancho máximo del texto */
+    font-family: 'Aileron', sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+    text-align: justify; /* Alineación del texto */
+}
+
+.intro h1 {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521; /* Rojo para el título */
+    font-size: 2em;
+    margin-bottom: 10px;
+    align: center;
+}
+
+.intro p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 66vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.boton-rojo {
+    display: inline-block;
+    background-color: transparent; /* Color transparente */
+    color: #ad2521; /* Texto en rojo */
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1em; /* Tamaño del texto */
+    padding: 8px 17px; /* Espaciado interno */
+    border: 1px solid #ad2521; 
+    text-decoration: none; /* Quita el subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+
+.boton-rojo:hover {
+    transform: scale(1.05); /* Efecto de zoom ligero */
+}
+
+.contenedorbotonrojo {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+
+/* Estilos para la sección de fondo blanco con el video */
+.fondo-blanco {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.titulo-video {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    align: center;
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+/* Nuestros servicios: nuestros-servicios.html................................................................................. */
+
+.introser {
+    margin-top: 150px;
+    margin-left: 2cm;
+    align-items: left;
+    text-align: justify;
+    background: #ffffff;
+}
+
+.tituloser {
+    font-size: 2.5em;
+    color: #ad2521; /* Rojo */
+    padding: 0;
+}
+
+.descripcionser {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 0.8cm;
+    padding: 0;
+    background: white;
+}
+
+.btn-transicion {
+    background-color: transparent;
+    color: #ad2521;
+    border: 1px solid #ad2521;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+
+.btn-transicion:hover {
+    transform: scale(1.05); /* Efecto de zoom ligero */
+}
+
+.plan-detalle {
+    margin: 2cm;
+    width: 48%; /* Ajusta el tamaño de cada bloque */
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ad2521;
+    text-align: left;
+    display: inline-block; /* Esto coloca los bloques en línea */
+}
+
+.oculto {
+    display: none; /* Oculta el elemento por defecto */
+}
+
+.subtituloser {
+    font-family: 'League Spartan', sans-serif;
+    color: #ad2521;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.4cm;
+}
+
+.descriptionser {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.descripcion sin-vinetas {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    margin-top: 1cm;
+}
+
+.imagen-golden {
+    text-align: center; /* Alinea todo el contenido del contenedor al centro */
+}
+
+.imagen-final-estilo {
+    max-width: 80%; /* Limita el ancho de la imagen */
+}
+
+/* Contacto: contacto.html.............................................................................................*/
 .contacto-info {
     font-family: 'Aileron', sans-serif;
     font-size: 16px;
     color: #333;
     margin: 2cm;
+}
+
+/* Estilo para los títulos y texto de contacto */
+.titulo {
+    font-size: 2.5em;
+    color: #ad2521; /* Rojo */
+    margin-top: 70px;
+}
+
+.texto {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contacto-left {
+    width: 50%; /* Ocupa la mitad del espacio horizontal */
+    align-items: left;
+}
+
+.subtitulo {
+    font-size: 2em;
+    color: #ad2521; /* Rojo */
+}
+
+.contacto-left,
+.contacto-right {
+    width: 48%; /* Ajusta el tamaño de cada bloque */
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ad2521;
+    text-align: left;
+    display: inline-block; /* Esto coloca los bloques en línea */
+    vertical-align: top; /* Alinea los bloques verticalmente */
+}
+
+/* Evitar márgenes adicionales innecesarios */
+.contacto-left p,
+.contacto-right p {
+    margin: 10px 0;
 }
 
 .telefono, .correo, .social {
@@ -357,40 +523,16 @@ header {
 .correo:hover::after { content: "Abrir"; }
 .social:hover::after { content: "Abrir"; }
 
-/* Estilo para los títulos y texto de contacto */
-.titulo {
-    font-size: 2.5em;
-    color: #ad2521; /* Rojo */
-    margin-top: 70px;
+.contacto-imagen {
+    width: 40%; /* Imagen ocupa el 40% del espacio horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: right;
 }
 
-.texto {
-    font-family: 'Aileron', sans-serif;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.subtitulo {
-    font-size: 2em;
-    color: #ad2521; /* Rojo */
-}
-
-/* Alineación horizontal de los bloques de contacto */
-.contacto-left,
-.contacto-right {
-    width: 48%; /* Ajusta el tamaño de cada bloque */
-    padding: 20px;
-    background-color: transparent;
-    border: 1px solid #ad2521;
-    text-align: left;
-    display: inline-block; /* Esto coloca los bloques en línea */
-    vertical-align: top; /* Alinea los bloques verticalmente */
-}
-
-/* Evitar márgenes adicionales innecesarios */
-.contacto-left p,
-.contacto-right p {
-    margin: 10px 0;
+.imagen-contacto {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -415,32 +557,6 @@ header {
     width: 2cm; /* Ajusta el tamaño según lo necesites */
     height: auto;
     margin: 10px;
-}
-
-/* Imagen contacto */
-.contacto-contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.contacto-left {
-    width: 50%; /* Ocupa la mitad del espacio horizontal */
-    align-items: left;
-}
-
-.contacto-imagen {
-    width: 40%; /* Imagen ocupa el 40% del espacio horizontal */
-    display: flex;
-    justify-content: center;
-    align-items: right;
-}
-
-.imagen-contacto {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Formulario de contacto */
@@ -500,18 +616,7 @@ header {
     background-color: #7a1a15;
 }
 
-/* Estilos de los enlaces de teléfono */
-.telefono {
-    color: #ad2521;
-    cursor: pointer;
-}
-
-.telefono:hover {
-    text-decoration: underline;
-}
-
-
-
+/* Celular..................................................................................................................*/
 /* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
     .titulo-kickoff {
@@ -521,210 +626,6 @@ header {
         font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
     }
 }  
-
-/* quienes-somos.html */
-.intro .contenido {
-    display: flex;
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    justify-content: center; /* Centra horizontalmente la sección completa */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
-}
-
-.intro .imagen-principal {
-   height: 12cm; /* Altura máxima de 12 cm */
-    width: auto; /* Mantiene las proporciones sin recortar la imagen */
-}
-
-.intro .texto {
-    max-width: 600px; /* Ancho máximo del texto */
-    font-family: 'Aileron', sans-serif; /* Tipografía */
-    color: #333; /* Color del texto */
-    text-align: justify; /* Alineación del texto */
-}
-
-.intro h1 {
-    font-family: 'League Spartan', sans-serif;
-    color: #ad2521; /* Rojo para el título */
-    font-size: 2em;
-    margin-bottom: 10px;
-    align: center;
-}
-
-.intro p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.boton-rojo {
-    display: inline-block;
-    background-color: transparent; /* Color transparente */
-    color: #ad2521; /* Texto en rojo */
-    font-family: 'League Spartan', sans-serif;
-    font-size: 1em; /* Tamaño del texto */
-    padding: 8px 17px; /* Espaciado interno */
-    border: 1px solid #ad2521; 
-    text-decoration: none; /* Quita el subrayado del enlace */
-    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
-    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
-}
-
-.boton-rojo:hover {
-    transform: scale(1.05); /* Efecto de zoom ligero */
-}
-
-.contenedorbotonrojo {
-    display: flex;
-    justify-content: center; /* Centra el botón horizontalmente */
-}
-
-/* Sección de la imagen de fondo */
-.imagen-fondoqs {
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ocupa toda la altura de la página */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-
-.contenidoqs {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center; /* Centra horizontalmente la sección completa */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
-}
-
-.titulosqs {
-    color: white;
-    align: center;
-}
-
-.titulo-principalqs {
-    font-size: 2rem; /* Ajusta el tamaño según necesites */
-    color: white;
-}
-
-.titulo-secundarioqs {
-    font-size: 4rem;
-    color: white;
-}
-
-/* Estilos para la sección de fondo blanco con el video */
-.fondo-blanco {
-    background-color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-.titulo-video {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    align: center;
-}
-
-.video-container {
-    max-width: 100%;
-    margin: 0 auto;
-    align: center;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 315px;
-}
-
-/* Estilo inicial del menú con fondo transparente */
-body.pagina-especial .menu2 {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-/* Estilo del menú al hacer scroll */
-body.pagina-especial .menu2.scrolled {
-    background-color: #5b7e52; /* Color verde, ajusta según lo desees */
-}
-
-
-
-/* Nuestros servicios pagina interna */
-
-.tituloser {
-    font-size: 2.5em;
-    color: #ad2521; /* Rojo */
-    padding: 0;
-}
-
-.introser {
-    margin-top: 150px;
-    margin-left: 2cm;
-    align-items: left;
-    text-align: justify;
-    background: #ffffff;
-}
-
-.descripcion sin-vinetas {
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center;
-    height: 100%;
-    padding: 20px;
-    font-family: 'Aileron', sans-serif;
-    font-size: 1.2em;
-    margin-top: 1cm;
-}
-
-
-.subtituloser {
-    font-family: 'League Spartan', sans-serif;
-    color: #ad2521;
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.4cm;
-}
-
-.descripcionser {
-    font-family: 'Aileron', sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    margin-top: 0.8cm;
-    padding: 0;
-    background: white;
-}
-
-.descriptionser {
-    font-family: 'Aileron', sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background: white;
-}
-
-.plan-detalle {
-    margin: 2cm;
-    width: 48%; /* Ajusta el tamaño de cada bloque */
-    padding: 20px;
-    background-color: transparent;
-    border: 1px solid #ad2521;
-    text-align: left;
-    display: inline-block; /* Esto coloca los bloques en línea */
-}
-
-.oculto {
-    display: none; /* Oculta el elemento por defecto */
-}
-
-.imagen-golden {
-    text-align: center; /* Alinea todo el contenido del contenedor al centro */
-}
-
-.imagen-final-estilo {
-    max-width: 80%; /* Limita el ancho de la imagen */
-}
 
 
 /* cambios para celulares */
