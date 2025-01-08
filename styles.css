@@ -627,6 +627,17 @@ header {
     height: 315px;
 }
 
+/* Estilo inicial del menú con fondo transparente */
+.pagina-especial .menu2 {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del menú al hacer scroll */
+.pagina-especial .menu2.menu-scroll {
+    background-color: #5b7e52; /* Color verde, ajusta según lo desees */
+}
+
 
 
 /* Nuestros servicios pagina interna */
