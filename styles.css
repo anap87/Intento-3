@@ -64,13 +64,14 @@ h1, h2, h3 {
     bottom: 60px; /* Ubica el botón en la parte inferior */
     left: 50%;
     transform: translateX(-50%); /* Lo centra horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+    width: 150px; /* Fija un ancho para mantener la alineación */
     z-index: 1; /* Asegura que el botón esté sobre el video */
     transition: all 0.3s ease;
-    cursor: pointer; /* Cambia el cursor a la mano */ 
 }
 
 .boton:hover {
-  transform: scale(1.05); /* Efecto de zoom ligero */
+  transform: translateX(-50%) scale(1.05); /* Efecto de zoom ligero */
   text-shadow: 0px 0px 5px white; /* Crea un delineado suave en el texto */
 }
 
