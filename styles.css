@@ -281,13 +281,11 @@ body.pagina-especial .menu2.scrolled {
 }
 
 .intro .texto {
-    max-width: 600px; /* Ancho máximo del texto */
-    font-family: 'Aileron', sans-serif; /* Tipografía */
-    color: #333; /* Color del texto */
+    max-width: 600px; /* Ancho máximo del texto */ 
 }
 
 .intro h1 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: "Cormorant Garamond", serif;
     color: #ad2521; /* Rojo para el título */
     font-size: 2em;
     margin-bottom: 10px;
@@ -298,6 +296,7 @@ body.pagina-especial .menu2.scrolled {
     font-size: 1em;
     line-height: 1.5;
     text-align: justify; /* Alineación del texto */
+    color: #333;
 }
 
 .imagen-principal {
@@ -338,9 +337,11 @@ body.pagina-especial .menu2.scrolled {
 }
 
 .titulo-video {
-    font-size: 4rem;
     margin-bottom: 1rem;
     align: center;
+    font-family: "Cormorant Garamond", serif;
+    color: #ad2521; /* Rojo para el título */
+    font-size: 2em;
 }
 
 .video-container {
