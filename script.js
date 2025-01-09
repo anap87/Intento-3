@@ -22,8 +22,9 @@ document.getElementById('menu-btn').addEventListener('click', function() {
 // Menu pagina interna quienes somos
 
 // Solo aplica el cambio de fondo si body tiene la clase pagina-especial
-if (window.location.pathname.endsWith('quienes-somos.html')) {
-    // Ejecutar solo si estamos en la página "quienes-somos.html"
+if (window.location.pathname.includes('quienes-somos.html')) {
+    console.log("Script cargado en la página: quienes-somos.html");
+
     document.addEventListener('DOMContentLoaded', function () {
         const menu = document.querySelector('.menu2');
         const tituloPrincipal = document.querySelector('.titulo-principalqs');
@@ -50,5 +51,7 @@ if (window.location.pathname.endsWith('quienes-somos.html')) {
             }
         });
     });
+} else {
+    console.log("Este script no se ejecuta en esta página.");
 }
 
