@@ -227,10 +227,12 @@ body.pagina-especial .menu2.scrolled {
 
 
 .contenidoqs {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente la sección completa */
-    align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
+     /*display: flex; */
+    /*justify-content: center;  Centra horizontalmente la sección completa */
+     /*align-items: flex-start; Alinea los elementos al inicio (parte superior) */
     margin-top: 10px; /* Agrega un margen superior relativo a la altura de la ventana */
+    position: fixed; /* Fija el contenedor en una posición en la pantalla */
+    top: 0; /* Ubica el contenedor en el borde superior de la página */
 }
 
 .titulosqs {
