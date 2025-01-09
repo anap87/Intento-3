@@ -447,6 +447,10 @@ header {
     margin-top: 1cm;
 }
 
+.descripcion sin-vinetas li {
+    margin: 20px; /* Ajusta el espacio entre los ítems */
+}
+
 .imagen-golden {
     text-align: center; /* Alinea todo el contenido del contenedor al centro */
 }
