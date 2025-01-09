@@ -459,6 +459,7 @@ header {
     display: flex; /* Activa Flexbox si hay otros elementos dentro */
     justify-content: center; /* Centra contenido horizontalmente */
     align-items: center; /* Centra contenido verticalmente */
+    z-index: -1;
 }
 
 .imagen-golden img {
