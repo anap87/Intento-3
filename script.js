@@ -30,7 +30,7 @@ if (window.location.pathname === '/quienes-somos.html') {
             const contenidoqs = document.querySelector('.contenidoqs');
             
             // Selecciona la segunda sección (ajusta el selector si es necesario)
-            const section2 = document.querySelector('.seccion2');
+            const section2 = document.querySelector('.intro');
             
             // Verifica si la página ha desplazado más allá de la segunda sección
             if (window.scrollY > section2.offsetTop) {
