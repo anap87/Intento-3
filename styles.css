@@ -452,16 +452,21 @@ header {
 }
 
 .imagen-golden {
-    position: fixed; /* La imagen se fija en la ventana, sin moverse */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    position: fixed; /* La imagen permanece fija en la ventana */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la referencia al centro del contenedor */
+    display: flex; /* Activa Flexbox si hay otros elementos dentro */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
 }
 
 .imagen-golden img {
-    width: 35%; /* Asegura que la imagen se ajuste al ancho */
-    height: auto; /* Mantiene la proporción */
-    opacity: 0.58;
+    width: 35%; /* Ajusta el ancho relativo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    opacity: 0.58; /* Aplica opacidad para ver el texto */
 }
+
 
 
 /* Contacto: contacto.html.............................................................................................*/
