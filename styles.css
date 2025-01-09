@@ -462,7 +462,7 @@ header {
 }
 
 .imagen-golden img {
-    width: 35%; /* Ajusta el ancho relativo de la imagen */
+    width: 50%; /* Ajusta el ancho relativo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     opacity: 0.58; /* Aplica opacidad para ver el texto */
 }
