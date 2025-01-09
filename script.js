@@ -22,37 +22,33 @@ document.getElementById('menu-btn').addEventListener('click', function() {
 // Menu pagina interna quienes somos
 
 // Solo aplica el cambio de fondo si body tiene la clase pagina-especial
-if (window.location.pathname === '/quienes-somos.html') {
-    // Verificamos que la clase `pagina-especial` está en el body
-    if (document.body.classList.contains('pagina-especial')) {
+if (window.location.pathname.endsWith('quienes-somos.html')) {
+    // Ejecutar solo si estamos en la página "quienes-somos.html"
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.querySelector('.menu2');
+        const tituloPrincipal = document.querySelector('.titulo-principalqs');
+        const tituloSecundario = document.querySelector('.titulo-secundarioqs');
+        const seccion1 = document.querySelector('.imagen-fondoqs');
+
+        if (!menu || !tituloPrincipal || !tituloSecundario || !seccion1) {
+            console.error("No se encontró uno o más elementos necesarios en el DOM.");
+            return;
+        }
+
+        // Escucha el evento de scroll
         window.addEventListener('scroll', function () {
-            const menu = document.querySelector('.menu2');
-            const tituloPrincipal = document.querySelector('.titulo-principalqs');
-            const tituloSecundario = document.querySelector('.titulo-secundarioqs');
-            const seccion1 = document.querySelector('.imagen-fondoqs'); // Primera sección
-
-            if (!seccion1) {
-                console.error("No se encontró la sección con clase 'imagen-fondoqs'.");
-                return;
-            }
-
-            // Obtener el punto de activación: un quinto antes del final de la sección 1
             const seccion1TriggerPoint = seccion1.offsetTop + seccion1.offsetHeight * 0.8;
 
-            // Cambia el fondo del menú y oculta los títulos cuando no estás en la sección 1
             if (window.scrollY >= seccion1TriggerPoint) {
-                menu.classList.add('scrolled'); // Fondo verde para el menú
-
-                // Ocultar los títulos
-                if (tituloPrincipal) tituloPrincipal.classList.add('hide-titles');
-                if (tituloSecundario) tituloSecundario.classList.add('hide-titles');
+                menu.classList.add('scrolled'); // Cambia el fondo del menú
+                tituloPrincipal.classList.add('hide-titles'); // Oculta título principal
+                tituloSecundario.classList.add('hide-titles'); // Oculta título secundario
             } else {
-                menu.classList.remove('scrolled'); // Fondo transparente para el menú
-
-                // Mostrar los títulos
-                if (tituloPrincipal) tituloPrincipal.classList.remove('hide-titles');
-                if (tituloSecundario) tituloSecundario.classList.remove('hide-titles');
+                menu.classList.remove('scrolled'); // Restaura el fondo del menú
+                tituloPrincipal.classList.remove('hide-titles'); // Muestra título principal
+                tituloSecundario.classList.remove('hide-titles'); // Muestra título secundario
             }
         });
-    }
+    });
 }
+
