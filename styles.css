@@ -455,17 +455,12 @@ header {
     position: fixed; /* La imagen se fija en la ventana, sin moverse */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    transform: translate(-50%, -50%); /* Ajusta el ancla al centro de la imagen */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    z-index: -1; /* Asegura que esté detrás del contenido */
 }
 
 .imagen-golden img {
-    display: block;
     width: 35%; /* Asegura que la imagen se ajuste al ancho */
     height: auto; /* Mantiene la proporción */
     opacity: 0.58;
-    object-fit: cover;
 }
 
 
