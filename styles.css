@@ -669,7 +669,7 @@ header {
         font-size: 1.5em; /* Reduce tamaño de los títulos */
     }
 
-    /* Sección "Inicio" */
+    /* Index.html */
     .inicio {
         padding: 10px;
     }
@@ -686,20 +686,50 @@ header {
 
      .titulo-kickoff {
         font-size: 2em; /* Tamaño más pequeño en dispositivos móviles */
+        text-align: center;
     }
     .titulo-scholars {
-        font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
+        font-size: 4em; /* Tamaño más pequeño en dispositivos móviles */
+        text-align: center;
     }
 
-    /* Menú flotante */
     .menu-flotante .menu-contenido {
         flex-direction: column; /* Alinea los elementos verticalmente */
+        text-align: center;
     }
 
     .menu-items li {
         margin: 10px; /* Reduce el espacio entre elementos */
     }
 
+    /* Menu2 paginas internas*/
+
+    .menu2 {
+        align-items: flex-start; /* Alinea los ítems a la izquierda */
+    }
+
+    .menu-items2 {
+        display: block; /* Los elementos se muestran de manera vertical */
+        margin-top: 10px;
+    }
+
+     .menu-items2 li {
+        margin: 10px; /* Reduce el espacio entre elementos */
+    }
+    .menu-items2 a {
+        font-size: 0.9rem; /* Reducir tamaño de fuente en móviles */
+        padding: 10px 0; /* Espaciado entre los elementos del menú */
+    }
+
+    .menu-items2 a:hover {
+        color: #d3d3d3; /* Rojo al pasar el cursor */
+    }
+
+    .logo2 {
+        margin-left: 5px;
+        height: 30px;
+        width: auto;
+     
     /* Quiénes somos */
     .intro .contenido {
         flex-direction: column; /* Cambia a una sola columna */
@@ -773,22 +803,5 @@ header {
         padding: 0 4px; /* Agregar algo de espacio a los lados para que no quede tan pegado */
     }
 
-    .menu2 {
-        flex-direction: column; /* Pone los elementos del menú en una columna */
-        align-items: flex-start; /* Alinea los ítems a la izquierda */
-    }
-
-    .menu-items2 {
-        display: block; /* Los elementos se muestran de manera vertical */
-        margin-top: 10px;
-    }
-
-    .menu-items2 a {
-        font-size: 0.9rem; /* Reducir tamaño de fuente en móviles */
-        padding: 10px 0; /* Espaciado entre los elementos del menú */
-    }
-
-    .menu-items2 a:hover {
-        color: #d3d3d3; /* Rojo al pasar el cursor */
-    }
+    
 }
