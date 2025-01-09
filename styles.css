@@ -452,19 +452,20 @@ header {
 }
 
 .imagen-golden {
-    position: relative; /* Asegura que el texto y la imagen puedan ser posicionados correctamente */
-    height: 100vh; /* Ajusta el alto de la sección al tamaño de la ventana */
+    position: fixed; /* La imagen se fija en la ventana, sin moverse */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    transform: translate(-50%, -50%); /* Ajusta el ancla al centro de la imagen */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    z-index: -1; /* Asegura que esté detrás del contenido */
 }
 
 .imagen-golden img {
-    position: absolute; /* Coloca la imagen detrás del contenido */
-    top: 0;
-    left: 0;
-    width: 40%; 
-    height: auto; 
-    object-fit: cover; /* Ajusta la imagen para que se vea bien sin deformarse */
-    opacity: 0.58; /* Aplica la opacidad */
-    z-index: -1; /* Envía la imagen al fondo */
+    display: block;
+    width: 35%; /* Asegura que la imagen se ajuste al ancho */
+    height: auto; /* Mantiene la proporción */
+    opacity: 0.58;
+    object-fit: cover;
 }
 
 
