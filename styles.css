@@ -469,6 +469,7 @@ header {
 
 /* Estilo para los títulos y texto de contacto */
 .titulo {
+    font-family: "Cormorant Garamond", serif;
     font-size: 2.5em;
     color: #ad2521; /* Rojo */
     margin-top: 150px;
@@ -494,6 +495,7 @@ header {
 }
 
 .subtitulo {
+    font-family: "Cormorant Garamond", serif;
     font-size: 2em;
     color: #ad2521; /* Rojo */
 }
@@ -593,7 +595,8 @@ header {
 }
 
 .formulario h3 {
-    font-size: 1.8em;
+    font-family: "Cormorant Garamond", serif;   
+    font-size: 1.5em;
     color: #ad2521;
 }
 
