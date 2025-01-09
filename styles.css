@@ -452,12 +452,21 @@ header {
 }
 
 .imagen-golden {
-    text-align: center; /* Alinea todo el contenido del contenedor al centro */
+    position: relative; /* Asegura que el texto y la imagen puedan ser posicionados correctamente */
+    height: 100vh; /* Ajusta el alto de la sección al tamaño de la ventana */
 }
 
-.imagen-final-estilo {
-    max-width: 80%; /* Limita el ancho de la imagen */
+.imagen-golden img {
+    position: absolute; /* Coloca la imagen detrás del contenido */
+    top: 0;
+    left: 0;
+    width: 40%; 
+    height: auto; 
+    object-fit: cover; /* Ajusta la imagen para que se vea bien sin deformarse */
+    opacity: 0.58; /* Aplica la opacidad */
+    z-index: -1; /* Envía la imagen al fondo */
 }
+
 
 /* Contacto: contacto.html.............................................................................................*/
 .contacto-info {
