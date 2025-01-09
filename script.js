@@ -23,36 +23,35 @@ document.getElementById('menu-btn').addEventListener('click', function() {
 
 // Solo aplica el cambio de fondo si body tiene la clase pagina-especial
 if (window.location.pathname === '/quienes-somos.html') {
-    // Solo ejecutamos el código si estamos en la página "quienes-somos.html"
+    // Verificamos que la clase `pagina-especial` está en el body
     if (document.body.classList.contains('pagina-especial')) {
         window.addEventListener('scroll', function () {
             const menu = document.querySelector('.menu2');
             const tituloPrincipal = document.querySelector('.titulo-principalqs');
             const tituloSecundario = document.querySelector('.titulo-secundarioqs');
+            const seccion1 = document.querySelector('.imagen-fondoqs'); // Primera sección
 
-            // Selecciona la primera sección
-            const section1 = document.querySelector('.imagen-fondoqs');
+            if (!seccion1) {
+                console.error("No se encontró la sección con clase 'imagen-fondoqs'.");
+                return;
+            }
 
-            if (section1) {
-                // Calcula el final de la primera sección
-                const section1Bottom = section1.offsetTop + section1.offsetHeight;
+            // Obtener el punto de activación: un quinto antes del final de la sección 1
+            const seccion1TriggerPoint = seccion1.offsetTop + seccion1.offsetHeight * 0.8;
 
-                // Verifica si el scroll está más allá del final de la primera sección
-                if (window.scrollY >= section1Bottom) {
-                    // Cambia el fondo del menú a verde
-                    menu.classList.add('scrolled');
-                    
-                    // Oculta los títulos
-                    tituloPrincipal.classList.add('hide-titles');
-                    tituloSecundario.classList.add('hide-titles');
-                } else {
-                    // Restaura el fondo del menú a transparente
-                    menu.classList.remove('scrolled');
-                    
-                    // Muestra nuevamente los títulos
-                    tituloPrincipal.classList.remove('hide-titles');
-                    tituloSecundario.classList.remove('hide-titles');
-                }
+            // Cambia el fondo del menú y oculta los títulos cuando no estás en la sección 1
+            if (window.scrollY >= seccion1TriggerPoint) {
+                menu.classList.add('scrolled'); // Fondo verde para el menú
+
+                // Ocultar los títulos
+                if (tituloPrincipal) tituloPrincipal.classList.add('hide-titles');
+                if (tituloSecundario) tituloSecundario.classList.add('hide-titles');
+            } else {
+                menu.classList.remove('scrolled'); // Fondo transparente para el menú
+
+                // Mostrar los títulos
+                if (tituloPrincipal) tituloPrincipal.classList.remove('hide-titles');
+                if (tituloSecundario) tituloSecundario.classList.remove('hide-titles');
             }
         });
     }
