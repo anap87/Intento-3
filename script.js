@@ -27,28 +27,33 @@ if (window.location.pathname === '/quienes-somos.html') {
     if (document.body.classList.contains('pagina-especial')) {
         window.addEventListener('scroll', function () {
             const menu = document.querySelector('.menu2');
-            const contenidoqs = document.querySelector('.contenidoqs');
-            
-            // Selecciona la segunda sección (ajusta el selector si es necesario)
-            const section2 = document.querySelector('.intro');
-            
-            // Verifica si la página ha desplazado más allá de la segunda sección
-            if (window.scrollY > section2.offsetTop) {
-                // Cambia el fondo del menú a verde
-                menu.classList.add('scrolled');
-                
-                // Oculta los títulos dentro de contenidoqs
-                contenidoqs.classList.add('hide-titles');
-            } else {
-                // Restaura el fondo del menú a transparente
-                menu.classList.remove('scrolled');
-                
-                // Muestra nuevamente los títulos dentro de contenidoqs
-                contenidoqs.classList.remove('hide-titles');
+            const tituloPrincipal = document.querySelector('.titulo-principalqs');
+            const tituloSecundario = document.querySelector('.titulo-secundarioqs');
+
+            // Selecciona la primera sección
+            const section1 = document.querySelector('.imagen-fondoqs');
+
+            if (section1) {
+                // Calcula el final de la primera sección
+                const section1Bottom = section1.offsetTop + section1.offsetHeight;
+
+                // Verifica si el scroll está más allá del final de la primera sección
+                if (window.scrollY >= section1Bottom) {
+                    // Cambia el fondo del menú a verde
+                    menu.classList.add('scrolled');
+                    
+                    // Oculta los títulos
+                    tituloPrincipal.classList.add('hide-titles');
+                    tituloSecundario.classList.add('hide-titles');
+                } else {
+                    // Restaura el fondo del menú a transparente
+                    menu.classList.remove('scrolled');
+                    
+                    // Muestra nuevamente los títulos
+                    tituloPrincipal.classList.remove('hide-titles');
+                    tituloSecundario.classList.remove('hide-titles');
+                }
             }
         });
     }
 }
-
-
-
