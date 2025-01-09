@@ -700,6 +700,7 @@ header {
 
     .menu-items li {
         margin: 10px; /* Reduce el espacio entre elementos */
+        text-align: center;
     }
 
     /* Menu2 paginas internas*/
@@ -707,6 +708,11 @@ header {
     .menu2 {
         align-items: flex-start; /* Alinea los ítems a la izquierda */
     }
+
+     .logo2 {
+        margin-left: 0;
+        height: 25px;
+        width: auto;
 
     .menu-items2 {
         display: block; /* Los elementos se muestran de manera vertical */
