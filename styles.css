@@ -657,20 +657,8 @@ header {
     background-color: #7a1a15;
 }
 
-/* Celular..................................................................................................................*/
-/* Opcional: Ajustar tamaño de fuente en pantallas pequeñas */
-@media (max-width: 768px) {
-    .titulo-kickoff {
-        font-size: 2em; /* Tamaño más pequeño en dispositivos móviles */
-    }
-    .titulo-scholars {
-        font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
-    }
-}  
-
-
-/* cambios para celulares */
-/* Adaptaciones para dispositivos móviles */
+/* Celular..................................................................................................................*/  
+/* Adaptaciones para celulares */
 @media (max-width: 768px) {
     /* General */
     body {
@@ -694,6 +682,13 @@ header {
         padding: 8px 16px;
         font-size: 0.9rem;
         bottom: 20px;
+    }
+
+     .titulo-kickoff {
+        font-size: 2em; /* Tamaño más pequeño en dispositivos móviles */
+    }
+    .titulo-scholars {
+        font-size: 1.5em; /* Tamaño más pequeño en dispositivos móviles */
     }
 
     /* Menú flotante */
