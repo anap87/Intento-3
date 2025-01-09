@@ -228,7 +228,7 @@ body.pagina-especial .menu2.scrolled {
 
 .contenidoqs {
      /*display: flex; */
-    /*justify-content: center;  Centra horizontalmente la sección completa */
+    justify-content: center;  /*Centra horizontalmente la sección completa */
      /*align-items: flex-start; Alinea los elementos al inicio (parte superior) */
     margin-top: 10px; /* Agrega un margen superior relativo a la altura de la ventana */
     position: fixed; /* Fija el contenedor en una posición en la pantalla */
@@ -249,7 +249,7 @@ body.pagina-especial .menu2.scrolled {
 
 .titulo-secundarioqs {
     font-family: "Charmonman", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     margin-top: 15px;
 }
