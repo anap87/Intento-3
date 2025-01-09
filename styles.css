@@ -215,7 +215,11 @@ header {
 }
 
 /* Títulos dentro de titulosqs */
-.titulo-principalqs .titulo-secundarioqs {
+.titulo-principalqs {
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza la transición */
+}
+
+.titulo-secundarioqs {
     transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza la transición */
 }
 
