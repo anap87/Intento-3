@@ -230,7 +230,7 @@ body.pagina-especial .menu2.scrolled {
      /*display: flex; */
     justify-content: center;  /*Centra horizontalmente la sección completa */
      /*align-items: flex-start; Alinea los elementos al inicio (parte superior) */
-    margin-top: 10px; /* Agrega un margen superior relativo a la altura de la ventana */
+    margin-top: 25px; /* Agrega un margen superior relativo a la altura de la ventana */
     position: fixed; /* Fija el contenedor en una posición en la pantalla */
     top: 0; /* Ubica el contenedor en el borde superior de la página */
 }
@@ -241,7 +241,7 @@ body.pagina-especial .menu2.scrolled {
 
 .titulo-principalqs {
     font-family: "Zen Kaku Gothic Antique", serif;
-    font-size: 1rem; /* Ajusta el tamaño según necesites */
+    font-size: 0.7rem; /* Ajusta el tamaño según necesites */
     color: white;
     margin-top: 10px;
  
@@ -249,9 +249,9 @@ body.pagina-especial .menu2.scrolled {
 
 .titulo-secundarioqs {
     font-family: "Charmonman", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* Seccion de quienes somos: mahee con balon */
