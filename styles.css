@@ -734,7 +734,7 @@ footer {
      .logo2 {
         height: 20px;
         width: auto;
-        transform: translateY(-30px);
+        transform: translateY(-34px);
         margin-left: 0;
      }
 
@@ -764,15 +764,19 @@ footer {
     .contenidoqs {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-40%); /* Ajusta este valor */
+        transform: translateY(-85%); /* Ajusta este valor */
     }
 
     .contenidoqs * {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-40%); /* Ajusta este valor */
+        transform: translateY(-85%); /* Ajusta este valor */
     }
 
+    .titulosqs * {
+        gap: 20px;
+    }
+ 
     .imagen-fondoqs {
         width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
         height: 100vh; /* Hace que la altura del contenedor ocupe toda la altura de la ventana */
@@ -842,6 +846,7 @@ footer {
         font-size: 16px; /* Tamaño más pequeño para la descripción */
         margin-top: 10px; /* Espacio superior para la descripción */
         margin-left: 20px;
+        margin-right: 20px;
         transform: translateY(60px);
     }
  
@@ -877,7 +882,7 @@ footer {
     }
 
     .titulo .texto {
-        margin-top: 10px;
+        margin-top: 20px;
         transform: translateY(60px);
     }
 
@@ -896,10 +901,12 @@ footer {
         flex-direction: column; /* Alinea los bloques verticalmente */
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         margin: 20px; /* Margen razonable alrededor de la sección */
+        margin-bottom: 10px;
     }
 
     .correo {
         margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .telefono {
