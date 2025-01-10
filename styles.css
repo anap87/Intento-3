@@ -734,7 +734,7 @@ footer {
      .logo2 {
         height: 20px;
         width: auto;
-        margin-top: -15px;
+        transform: translateY(-30px);
         margin-left: 0;
      }
 
@@ -764,7 +764,13 @@ footer {
     .contenidoqs {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-60%); /* Ajusta este valor */
+        transform: translateY(-40%); /* Ajusta este valor */
+    }
+
+    .contenidoqs * {
+        margin-top: 80px;
+        position: relative;
+        transform: translateY(-40%); /* Ajusta este valor */
     }
 
     .imagen-fondoqs {
@@ -870,9 +876,13 @@ footer {
         transform: translateY(60px);
     }
 
-    .texto {
+    .titulo .texto {
         margin-top: 10px;
         transform: translateY(60px);
+    }
+
+    .subtitulo .texto {
+        transform: none; /* Asegura que el subtítulo no tenga la transformación */
     }
 
     .subtitulo {
