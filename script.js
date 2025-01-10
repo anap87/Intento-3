@@ -38,20 +38,18 @@ if (window.location.pathname.includes('quienes-somos.html')) {
 
         // Escucha el evento de scroll
         window.addEventListener('scroll', function () {
-            const seccion1TriggerPoint = seccion1.offsetTop + seccion1.offsetHeight * 0.8;
-
-            if (window.scrollY >= seccion1TriggerPoint) {
-                menu.classList.add('scrolled'); // Cambia el fondo del menú
-                tituloPrincipal.classList.add('hide-titles'); // Oculta título principal
-                tituloSecundario.classList.add('hide-titles'); // Oculta título secundario
+            // Revisar si el scroll está en la sección 1
+            if (window.scrollY < seccion1.offsetHeight) {
+                menu.classList.add('menu-transparente'); // Fondo transparente en la sección 1
+                tituloPrincipal.classList.remove('hide-titles'); // Mostrar títulos
+                tituloSecundario.classList.remove('hide-titles');
             } else {
-                menu.classList.remove('scrolled'); // Restaura el fondo del menú
-                tituloPrincipal.classList.remove('hide-titles'); // Muestra título principal
-                tituloSecundario.classList.remove('hide-titles'); // Muestra título secundario
+                menu.classList.remove('menu-transparente'); // Fondo normal cuando se sale de la sección 1
+                tituloPrincipal.classList.add('hide-titles'); // Ocultar títulos
+                tituloSecundario.classList.add('hide-titles');
             }
         });
     });
 } else {
     console.log("Este script no se ejecuta en esta página.");
 }
-
