@@ -468,7 +468,11 @@ header {
     opacity: 0.58; /* Aplica opacidad para ver el texto */
 }
 
-
+footer {
+    position: absolute; /* Esto hace que el footer se posicione de manera absoluta */
+    bottom: 0; /* Lo coloca en la parte inferior de la página */
+    padding: 20px;
+}
 
 /* Contacto: contacto.html.............................................................................................*/
 .contacto-info {
@@ -779,6 +783,12 @@ header {
 
      .imagen-golden {
         display: none; /* Oculta la sección en dispositivos móviles */
+    }
+
+     footer {
+        position: absolute; /* Esto hace que el footer se posicione de manera absoluta */
+        bottom: 0; /* Lo coloca en la parte inferior de la página */
+        padding: 20px;
     }
  
     /* Contacto */
