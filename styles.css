@@ -802,11 +802,13 @@ footer {
    /* Nuestros-servicios.html*/
     .introser {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
-        margin: 20px; /* Margen razonable alrededor de la sección */
+        margin-left: 20px; /* Margen razonable alrededor de la sección */
+        margin-top: 60px;
     }
 
     .tituloser {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        font-size: 28px;
     }
 
     .descripcionser {
@@ -827,11 +829,24 @@ footer {
     .contacto-info {
         flex-direction: column; /* Alinea los bloques verticalmente */
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
-        margin: 20px; /* Margen razonable alrededor de la sección */
+        margin-left: 20px; /* Margen razonable alrededor de la sección */
+        margin-top: 60px;
     }
 
     .contacto-info * { /* Esto selecciona todos los elementos dentro del contenedor */
-    text-align: left; /* Fuerza la alineación de texto en todos los elementos internos */
+        text-align: left; /* Fuerza la alineación de texto en todos los elementos internos */
+        margin-left: 20px; /* Margen razonable alrededor de la sección */
+        margin-top: 60px;
+    }
+
+    .titulo {
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        font-size: 22px;
     }
  
     .contacto-contenedor {
