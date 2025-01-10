@@ -730,13 +730,12 @@ header {
     .menu-items2 a:hover {
         color: #d3d3d3; /* Rojo al pasar el cursor */
     }
-
-    .logo2 {
-        margin-left: 5px;
-        height: 30px;
-        width: auto;
      
     /* Quiénes somos */
+    .contenidoqs {
+        margin-top: 30px;
+    }
+       
     .intro .contenido {
         flex-direction: column; /* Cambia a una sola columna */
     }
