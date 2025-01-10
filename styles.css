@@ -812,6 +812,8 @@ footer {
  
     .introser * {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        margin-left: 20px; /* Margen razonable alrededor de la sección */
+        margin-top: 60px;
     }
  
     .tituloser {
@@ -859,6 +861,7 @@ footer {
     .subtitulo {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         font-size: 22px;
+        margin-left: 0;
     }
  
     .contacto-contenedor {
@@ -896,18 +899,5 @@ footer {
     .redes-sociales a {
         font-size: 1.5em; /* Ajusta el tamaño de íconos */
     }
-
-    .titulo {
-        font-size: 1.8rem; /* Reducir tamaño de fuente para dispositivos más pequeños */
-        text-align: center; /* Alinear el título al centro */
-        
-    }
-
-    .descripcionser {
-        font-size: 1rem; /* Reducir tamaño de fuente para móviles */
-        text-align: center; /* Alinear el texto al centro */
-        padding: 0 4px; /* Agregar algo de espacio a los lados para que no quede tan pegado */
-    }
-
     
 }
