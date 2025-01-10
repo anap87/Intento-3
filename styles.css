@@ -490,6 +490,12 @@ footer {
     margin-top: 150px;
 }
 
+.texto1 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+}
+
 .texto {
     font-family: 'Aileron', sans-serif;
     font-size: 1.2em;
@@ -882,12 +888,12 @@ footer {
         transform: translateY(60px);
     }
 
-    .texto {
+    .texto1 {
         margin-top: 20px;
         transform: translateY(60px);
     }
 
-    .subtitulo .texto {
+    .texto {
         transform: none; /* Asegura que el subtítulo no tenga la transformación */
     }
 
