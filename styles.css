@@ -709,13 +709,21 @@ header {
         display: flex; /* Asegura que los elementos estén en una fila */
         justify-content: space-between; /* Distribuye los elementos dejando espacio entre ellos */
         align-items: center; /* Centra verticalmente el contenido */
-        padding: 0 10px; /* Reduce el espacio lateral */     
+        padding: 10px; /* Espaciado interno para asegurar que el fondo cubra todo */
+        height: 60px; /* Altura fija para que el menú se mantenga consistente */
+        box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
     }
 
      .logo2 {
-        margin-left: 0;
+        margin-left: 5px;
         height: 25px;
         width: auto;
+     }
+
+      .logo2 img {
+        object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+        display: block;
+     }
 
     .menu-items2 {
         display: flex; /* Los elementos se muestran de manera vertical */
@@ -742,9 +750,16 @@ header {
         top: 20px;
         justify-content: center;
     }
-       
+
+    .imagen-fondoqs img {
+        object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+        display: block;
+    }
+ 
     .intro .contenido {
-        flex-direction: column; /* Cambia a una sola columna */
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Cambia a una disposición en columna */
+        align-items: center; /* Opcional: Centra los elementos horizontalmente */
     }
 
     .intro .imagen-principal {
@@ -757,20 +772,43 @@ header {
     }
 
    /* Nuestros-servicios.html*/
+    .introser {
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        margin: 20px; /* Margen razonable alrededor de la sección */
+    }
 
+     .imagen-golden {
+        display: none; /* Oculta la sección en dispositivos móviles */
+    }
+ 
     /* Contacto */
-    .contacto-contenedor {
+     .contacto-info {
         flex-direction: column; /* Alinea los bloques verticalmente */
-        text-align: center; /* Centra el contenido */
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        margin: 20px; /* Margen razonable alrededor de la sección */
+    }
+     
+ 
+ .contacto-contenedor {
+        flex-direction: column; /* Alinea los bloques verticalmente */
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+        margin: 20px; /* Margen razonable alrededor de la sección */
     }
 
     .contacto-left, .contacto-imagen {
         width: 100%; /* Cada bloque ocupa todo el ancho */
     }
 
-    .imagen-contacto {
-        margin: 20px auto; /* Centra la imagen */
+    .contacto-imagen {
+        display: flex; /* Habilita flexbox en el contenedor */
+        justify-content: center; /* Centra la imagen horizontalmente */
     }
+
+    .contacto-imagen img {
+        width: 80%; /* La imagen ocupará el 80% del ancho del contenedor */
+        height: auto; /* Mantendrá las proporciones de la imagen */
+    }
+
 
     /* Formulario */
     .formulario form {
