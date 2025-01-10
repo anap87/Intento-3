@@ -721,24 +721,25 @@ footer {
         justify-content: space-between; /* Distribuye los elementos dejando espacio entre ellos */
         align-items: center; /* Centra verticalmente el contenido */
         padding: 0 10px; /* Espaciado interno para asegurar que el fondo cubra todo */
-        height: 60px; /* Altura fija para que el menú se mantenga consistente */
+        height: 80px; /* Altura fija para que el menú se mantenga consistente */
         box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
         position: fixed;  /* Hace que el menú se quede fijo en la parte superior */
         top: 0;
         width: 100%;
         z-index: 1000;  /* Asegura que el menú esté por encima de otros elementos */
+        margin: 0;
+        gap: 20px;
     }
 
      .logo2 {
-        margin-left: 3px;
-        height: 25px;
+        height: 20px;
         width: auto;
+        margin-top: 0;
+        margin-left: 0;
      }
 
       .logo2 img {
         object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
-        display: block;
-        align-items: left;
      }
 
     .menu-items2 {
@@ -826,6 +827,7 @@ footer {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         font-size: 28px;
         margin-top: 40px; /* Ajusta si es necesario */
+        transform: translateY(60px);
     }
 
     .descripcionser {
@@ -863,6 +865,7 @@ footer {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         font-size: 28px;
         margin-top: 40px;
+        transform: translateY(60px);
     }
 
     .texto {
