@@ -737,7 +737,10 @@ header {
      
     /* Quiénes somos */
     .contenidoqs {
-        margin-top: 30px;
+        margin-top: 80px;
+        position: relative;
+        top: 20px;
+        justify-content: center;
     }
        
     .intro .contenido {
@@ -753,23 +756,7 @@ header {
         max-width: 100%; /* Texto ocupa todo el ancho */
     }
 
-    /* Planes */
-    .planes {
-        flex-direction: column; /* Cambia a una sola columna */
-    }
-
-    .plan {
-        flex-direction: column; /* Cambia a una sola columna */
-        margin: 10px 0;
-    }
-
-    .plan-imagen img {
-        max-width: 100%; /* Imagen ocupa todo el ancho */
-    }
-
-    .plan-texto {
-        text-align: center; /* Centra el texto */
-    }
+   /* Nuestros-servicios.html*/
 
     /* Contacto */
     .contacto-contenedor {
