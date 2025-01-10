@@ -856,12 +856,14 @@ footer {
     .titulo {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         font-size: 28px;
+        margin-top: 20px;
     }
 
     .subtitulo {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         font-size: 22px;
         margin-left: 0;
+        margin-top: 0;
     }
  
     .contacto-contenedor {
