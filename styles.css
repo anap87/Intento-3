@@ -706,7 +706,10 @@ header {
     /* Menu2 paginas internas*/
 
     .menu2 {
-        align-items: flex-start; /* Alinea los ítems a la izquierda */
+        display: flex; /* Asegura que los elementos estén en una fila */
+        justify-content: space-between; /* Distribuye los elementos dejando espacio entre ellos */
+        align-items: center; /* Centra verticalmente el contenido */
+        padding: 0 10px; /* Reduce el espacio lateral */     
     }
 
      .logo2 {
@@ -715,16 +718,17 @@ header {
         width: auto;
 
     .menu-items2 {
-        display: block; /* Los elementos se muestran de manera vertical */
+        display: flex; /* Los elementos se muestran de manera vertical */
         margin-top: 10px;
+        gap: 10px; /* Espacio uniforme entre los ítems */
     }
 
      .menu-items2 li {
-        margin: 10px; /* Reduce el espacio entre elementos */
+        margin: 0; /* Elimina márgenes extra */
     }
     .menu-items2 a {
-        font-size: 0.9rem; /* Reducir tamaño de fuente en móviles */
-        padding: 10px 0; /* Espaciado entre los elementos del menú */
+        font-size: 0.8rem; /* Reducir tamaño de fuente en móviles */
+        padding: 8px 0; /* Espaciado entre los elementos del menú */
     }
 
     .menu-items2 a:hover {
