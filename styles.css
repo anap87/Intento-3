@@ -734,7 +734,7 @@ footer {
      .logo2 {
         height: 20px;
         width: auto;
-        margin-top: 0;
+        margin-top: -15px;
         margin-left: 0;
      }
 
@@ -764,7 +764,7 @@ footer {
     .contenidoqs {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-30%); /* Ajusta este valor */
+        transform: translateY(-60%); /* Ajusta este valor */
     }
 
     .imagen-fondoqs {
@@ -793,10 +793,11 @@ footer {
     .intro .imagen-principal {
         width: 80%; /* Imagen ocupa todo el ancho */
         height: auto; /* Ajusta altura automáticamente */
+        margin-top: 10px;
     }
 
     .intro .texto {
-        max-width: 100%; /* Texto ocupa todo el ancho */
+        max-width: 90%; /* Texto ocupa todo el ancho */
     }
 
     .video-container {
@@ -835,6 +836,7 @@ footer {
         font-size: 16px; /* Tamaño más pequeño para la descripción */
         margin-top: 10px; /* Espacio superior para la descripción */
         margin-left: 20px;
+        transform: translateY(60px);
     }
  
      .imagen-golden {
@@ -870,6 +872,7 @@ footer {
 
     .texto {
         margin-top: 10px;
+        transform: translateY(60px);
     }
 
     .subtitulo {
