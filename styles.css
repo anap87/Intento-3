@@ -764,6 +764,10 @@ footer {
         width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
         height: 100vh; /* Hace que la altura del contenedor ocupe toda la altura de la ventana */
         overflow: hidden; /* Asegura que no haya scroll si la imagen es más grande que el contenedor */
+        top: 0;
+        left: 0;
+        object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+        z-index: -1; /* Envía el video detrás de todo el contenido */
     }
 
     .imagen-fondoqs img {
