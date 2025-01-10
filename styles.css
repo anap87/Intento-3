@@ -713,13 +713,17 @@ footer {
         display: flex; /* Asegura que los elementos estén en una fila */
         justify-content: space-between; /* Distribuye los elementos dejando espacio entre ellos */
         align-items: center; /* Centra verticalmente el contenido */
-        padding: 10px; /* Espaciado interno para asegurar que el fondo cubra todo */
+        padding: 0 10px; /* Espaciado interno para asegurar que el fondo cubra todo */
         height: 60px; /* Altura fija para que el menú se mantenga consistente */
         box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+        position: fixed;  /* Hace que el menú se quede fijo en la parte superior */
+        top: 0;
+        width: 100%;
+        z-index: 1000;  /* Asegura que el menú esté por encima de otros elementos */
     }
 
      .logo2 {
-        margin-left: 5px;
+        margin-left: 3px;
         height: 25px;
         width: auto;
      }
@@ -727,16 +731,17 @@ footer {
       .logo2 img {
         object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
         display: block;
+        align-items: left;
      }
 
     .menu-items2 {
         display: flex; /* Los elementos se muestran de manera vertical */
         margin-top: 10px;
-        gap: 10px; /* Espacio uniforme entre los ítems */
     }
 
      .menu-items2 li {
         margin: 0; /* Elimina márgenes extra */
+        gap: 10px; /* Espacio uniforme entre los ítems */
     }
     .menu-items2 a {
         font-size: 0.8rem; /* Reducir tamaño de fuente en móviles */
@@ -751,15 +756,23 @@ footer {
     .contenidoqs {
         margin-top: 80px;
         position: relative;
-        top: 20px;
+        transform: translateY(-30%); /* Ajusta este valor */
         justify-content: center;
     }
 
-    .imagen-fondoqs img {
-        object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
-        display: block;
+    .imagen-fondoqs {
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        height: 100vh; /* Hace que la altura del contenedor ocupe toda la altura de la ventana */
+        overflow: hidden; /* Asegura que no haya scroll si la imagen es más grande que el contenedor */
     }
- 
+
+    .imagen-fondoqs img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+        object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+        display: block; /* Elimina espacio extra debajo de la imagen */
+    }
+
     .intro .contenido {
         display: flex; /* Activa Flexbox */
         flex-direction: column; /* Cambia a una disposición en columna */
@@ -775,12 +788,31 @@ footer {
         max-width: 100%; /* Texto ocupa todo el ancho */
     }
 
+    .video-container {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        align: center;
+    }
+
+    .video-container iframe {
+        width: 100%;
+    }
+ 
    /* Nuestros-servicios.html*/
     .introser {
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         margin: 20px; /* Margen razonable alrededor de la sección */
     }
 
+    .tituloser {
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+    }
+
+    .descripcionser {
+        text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
+    }
+ 
      .imagen-golden {
         display: none; /* Oculta la sección en dispositivos móviles */
     }
@@ -792,21 +824,24 @@ footer {
     }
  
     /* Contacto */
-     .contacto-info {
+    .contacto-info {
         flex-direction: column; /* Alinea los bloques verticalmente */
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         margin: 20px; /* Margen razonable alrededor de la sección */
     }
-     
+
+    .contacto-info * { /* Esto selecciona todos los elementos dentro del contenedor */
+    text-align: left; /* Fuerza la alineación de texto en todos los elementos internos */
+    }
  
- .contacto-contenedor {
+    .contacto-contenedor {
         flex-direction: column; /* Alinea los bloques verticalmente */
         text-align: left; /* Alinea el texto y los elementos hijos a la izquierda */
         margin: 20px; /* Margen razonable alrededor de la sección */
     }
 
     .contacto-left, .contacto-imagen {
-        width: 100%; /* Cada bloque ocupa todo el ancho */
+        width: 90%; /* Cada bloque ocupa todo el ancho */
     }
 
     .contacto-imagen {
