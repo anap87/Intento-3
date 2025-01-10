@@ -665,10 +665,17 @@ footer {
 /* Adaptaciones para celulares */
 @media (max-width: 768px) {
     /* General */
-    body {
+  /*  body {
         padding: 10px;
-    }
+    } */
 
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+    
     h1, h2, h3 {
         font-size: 1.5em; /* Reduce tamaño de los títulos */
     }
