@@ -734,7 +734,7 @@ footer {
      .logo2 {
         height: 20px;
         width: auto;
-        transform: translateY(-34px);
+        transform: translateY(-36px);
         margin-left: 0;
      }
 
@@ -764,17 +764,18 @@ footer {
     .contenidoqs {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-85%); /* Ajusta este valor */
+        transform: translateY(-70%); /* Ajusta este valor */
     }
 
     .contenidoqs * {
         margin-top: 80px;
         position: relative;
-        transform: translateY(-85%); /* Ajusta este valor */
+        transform: translateY(-70%); /* Ajusta este valor */
+        gap: 0px;
     }
 
     .titulosqs * {
-        gap: 20px;
+        gap: 10px;
     }
  
     .imagen-fondoqs {
@@ -881,7 +882,7 @@ footer {
         transform: translateY(60px);
     }
 
-    .titulo .texto {
+    .texto {
         margin-top: 20px;
         transform: translateY(60px);
     }
@@ -906,7 +907,7 @@ footer {
 
     .correo {
         margin-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .telefono {
@@ -922,6 +923,7 @@ footer {
         display: flex; /* Habilita flexbox en el contenedor */
         justify-content: center; /* Centra la imagen horizontalmente */
         widht: 90%;
+        margin-top: 0;
     }
 
     .contacto-imagen img {
