@@ -555,6 +555,87 @@ footer {
     padding: 20px;
 }
 
+/*FAQs pagina interna.................................................................................................................*/
+body {
+    font-family: 'Aileron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    color: #ad2521; /* Rojo para el título */   
+    font-size: 2.5em;
+    padding: 0;
+}
+
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.faq-question {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #f2f2f2;
+}
+
+.faq-question h2 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 0.8cm;
+    padding: 0;
+    background: white;
+}
+
+.faq-question .arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    color: transparent; /* Cambia el color */
+    font-size: 20px; /* Ajusta el tamaño */
+    text-shadow: 1px 1px 2px rgba(91, 126, 82, 0.8); /* Simula un borde o relieve */
+}
+
+.faq-answer {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 0.8cm;
+    margin-left: 0.8cm;
+    margin-bottom: 0.8cm;
+    padding: 0;
+    background: white;
+    display: none; /* Ocultar inicialmente */
+    transition: all 0.3s ease-in-out; /* Transición suave al abrir/cerrar */
+}
+
+.faq-answer.open {
+    display: block; /* Mostrar cuando se abre */
+}
+
 /* Contacto: contacto.html.............................................................................................*/
 .contacto-info {
     font-family: 'Aileron', sans-serif;
