@@ -1034,6 +1034,15 @@ h1 {
         display: none; /* Oculta la sección en dispositivos móviles */
     }
 
+    #tabla-comparativa table {
+        border-collapse: separate; /* Permite añadir espacio entre celdas */
+        border-spacing: 10px; /* Espacio ligero entre celdas */
+        width: 70%; /* Ajusta el ancho de la tabla */
+        text-align: center; /* Centra el texto en las celdas */
+        font-family: "Aileron", sans-serif;
+        color: #2F4F4F; /* Color rojo para texto */
+}
+
      footer {
         position: relative;
         bottom: 0; /* Lo coloca en la parte inferior de la página */
