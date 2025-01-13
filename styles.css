@@ -924,6 +924,7 @@ h1 {
     .menu-items2 {
         display: flex; /* Los elementos se muestran de manera vertical */
         margin-top: 10px;
+        text-align: center;
     }
 
      .menu-items2 li {
