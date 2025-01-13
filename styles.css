@@ -365,6 +365,10 @@ header {
 
 /* Nuestros servicios: nuestros-servicios.html................................................................................. */
 
+#nuestros-servicios {
+  background: white; /* Fondo blanco */
+}
+
 .introser {
     margin-top: 150px;
     margin-left: 2cm;
