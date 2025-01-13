@@ -567,6 +567,13 @@ body {
     background-color: #f9f9f9;
 }
 
+.faqstitulo {
+    margin-top: 150px;
+    margin-left: 2cm;
+    align-items: left;
+    text-align: justify;
+}
+
 h1 {
     font-family: "Cormorant Garamond", serif;
     color: #ad2521; /* Rojo para el título */   
