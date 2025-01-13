@@ -468,6 +468,87 @@ header {
     opacity: 0.58; /* Aplica opacidad para ver el texto */
 }
 
+/*tabla */
+/* Estilo general para centrar la tabla */
+#tabla-comparativa {
+  display: flex;
+  justify-content: center; /* Centra la tabla horizontalmente */
+  padding: 20px; /* Agrega espacio alrededor de la sección */
+}
+
+.tabla {
+    background-color: white;
+}
+
+#tabla-comparativa th {
+  color: ##ad2521; 
+}
+
+#tabla-comparativa table {
+  border-collapse: separate; /* Permite añadir espacio entre celdas */
+  border-spacing: 10px; /* Espacio ligero entre celdas */
+  width: 80%; /* Ajusta el ancho de la tabla */
+  text-align: center; /* Centra el texto en las celdas */
+  font-family: "Aileron", sans-serif;
+  color: #2F4F4F; /* Color rojo para texto */
+}
+
+#tabla-comparativa th,
+#tabla-comparativa td {
+  border: 1px solid #ad2521; /* Borde rojo */
+  padding: 10px; /* Espaciado interno en las celdas */
+}
+
+#tabla-comparativa th {
+  background-color: transparent; /* Fondo claro para encabezados */
+  font-family: "League Spartan", sans-serif; /* Fuente para los títulos */
+  font-size: 1.2em; /* Tamaño de fuente para títulos */
+  color: #ad2521;
+}
+
+#tabla-comparativa td {
+  background-color: transparent; /* Fondo claro para celdas */
+  font-size: 1em; /* Tamaño de fuente para contenido */
+}
+
+#tabla-comparativa tr:nth-child(even) td {
+  background-color: transparent; /* Fondo ligeramente diferente en filas pares */
+}
+
+#preguntas-frecuentes {
+  padding: 20px;
+  text-align: center; /* Centra el texto */
+  background-color: white; /* Fondo claro */
+  border: 1px solid #ad2521; /* Borde rojo sin esquinas redondeadas */
+  margin: 20px auto; /* Espaciado exterior */
+  width: 80%; /* Ajusta el ancho de la sección */
+}
+
+#preguntas-frecuentes h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.8em;
+  color:  #ad2521; 
+  margin-bottom: 10px;
+}
+
+#preguntas-frecuentes p {
+  font-family: "Aileron", sans-serif;
+  font-size: 1em;
+  color: #2F4F4F; /* Plomo oscuro */
+}
+
+#preguntas-frecuentes .link {
+  color: #ad2521; /* Rojo para resaltar el enlace */
+  font-weight: bold;
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease; /* Suave transición de color */
+}
+
+#preguntas-frecuentes .link:hover {
+  color: #2F4F4F; /* Cambia a plomo oscuro al pasar el mouse */
+  text-decoration: underline; /* Subrayado en hover */
+}
+
 footer {
     position: relative;
     bottom: 0; /* Lo coloca en la parte inferior de la página */
